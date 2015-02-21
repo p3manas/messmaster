@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.mrptech.mess.constants.path.CustomerLogin;
-import com.mrptech.mess.dto.AuthenticationDto;
+import com.mrptech.mess.dto.LoginDto;
 import com.mrptech.mess.service.LoginService;
 
 
@@ -44,20 +44,20 @@ public class LoginController  implements CustomerLogin{
 	
 	@RequestMapping(method = RequestMethod.GET)
 	public String customerLogin(HttpServletRequest request, Model model) {
-		AuthenticationDto dto = new AuthenticationDto();
+		LoginDto dto = new LoginDto();
 		model.addAttribute(AUTHENTICATION_FORM, dto);
 		return CUSTOMER_LOGIN;
 	}
 	
 	@SuppressWarnings("unchecked")
 	@RequestMapping(method = RequestMethod.POST)
-	public String doCustomerLogin(@SuppressWarnings("rawtypes") Map model, HttpServletRequest request, Locale locale, @ModelAttribute AuthenticationDto authenticationDto){
+	public String doCustomerLogin(@SuppressWarnings("rawtypes") Map model, HttpServletRequest request, Locale locale, @ModelAttribute LoginDto authenticationDto){
 		
 		
 		
 		//context.
 		
-		Map<String, List<AuthenticationDto>>  map=loginService.login("sysAdmin@manas.com", "", 12);
+		Map<String, List<LoginDto>>  map=loginService.login("sysAdmin@manas.com", "", 12);
 		
 		HttpSession session=request.getSession();
 		session.setAttribute("SideMenu", map);

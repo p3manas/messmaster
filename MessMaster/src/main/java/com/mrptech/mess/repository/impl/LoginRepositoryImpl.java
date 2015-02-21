@@ -11,7 +11,6 @@ import javax.inject.Inject;
 import org.springframework.stereotype.Component;
 
 import com.mrptech.mess.dao.LoginDao;
-import com.mrptech.mess.dto.AuthenticationDto;
 import com.mrptech.mess.dto.LoginDto;
 import com.mrptech.mess.repository.LoginRepository;
 
@@ -35,9 +34,9 @@ public class LoginRepositoryImpl implements LoginRepository {
 	}
 	
 	@Override
-	public Map<String, List<AuthenticationDto>> login(String loginId, String password,
+	public Map<String, List<LoginDto>> login(String loginId, String password,
 			Integer categoryId) {
-		Map<String, List<AuthenticationDto>> map=loginDao.getAuthenticationByLoginName(loginId);
+		Map<String, List<LoginDto>> map=loginDao.getAuthenticationByLoginName(loginId);
 		LoginDto loginDto =  new LoginDto();
 		return map;
 	}

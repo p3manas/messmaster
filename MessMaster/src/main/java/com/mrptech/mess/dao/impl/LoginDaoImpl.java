@@ -16,7 +16,7 @@ import org.springframework.orm.hibernate4.HibernateTemplate;
 import org.springframework.stereotype.Component;
 
 import com.mrptech.mess.dao.LoginDao;
-import com.mrptech.mess.dto.AuthenticationDto;
+import com.mrptech.mess.dto.LoginDto;
 import com.mrptech.mess.model.Users;
 
 /**
@@ -34,7 +34,7 @@ public class LoginDaoImpl implements LoginDao {
 
 	@SuppressWarnings("unchecked")
 	@Override
-	public Map<String, List<AuthenticationDto>> getAuthenticationByLoginName(String loginId) {
+	public Map<String, List<LoginDto>> getAuthenticationByLoginName(String loginId) {
 
 		String str="SELECT rol.roleDesc,res.resourceDesc,res.url FROM RolesResources rss,Resources res,Roles rol WHERE rol.id.roleCode=rss.id.roleCode   and "
 				+ "res.id.resourceId=rss.id.resourceId  and rss.id.roleCode in( SELECT id.roleCode FROM RolesGroupRoles where "
@@ -42,9 +42,9 @@ public class LoginDaoImpl implements LoginDao {
 		
 		List<?> list=hibernateTemplate.find(str, "SYSTEM_ADMIN");
 		
-		Map<String, List<AuthenticationDto>> map=new LinkedHashMap<String, List<AuthenticationDto>>();
+		Map<String, List<LoginDto>> map=new LinkedHashMap<String, List<LoginDto>>();
 		String temp=null;
-		List<AuthenticationDto> tests=new ArrayList<AuthenticationDto>();
+		List<LoginDto> tests=new ArrayList<LoginDto>();
 		Object[] arryStr=list.toArray();
 		for (int i = 0; i < arryStr.length; i++) {
 			
@@ -52,14 +52,14 @@ public class LoginDaoImpl implements LoginDao {
 			//if prev value not equals to next value.
 			if (temp != null && !temp.equals(newStr[0])) {
 				map.put(temp, tests);
-				tests=new ArrayList<AuthenticationDto>();			
+				tests=new ArrayList<LoginDto>();			
 			}
 
 			for (int j = 1; j < newStr.length; ) {
 				temp=newStr[0].toString();
-				AuthenticationDto test=new AuthenticationDto();
+				LoginDto test=new LoginDto();
 				test.setUserName(newStr[1].toString());
-				test.setPassword(newStr[2].toString());
+				test.setUrl(newStr[2].toString());
 				tests.add(test);
 				break;
 			}

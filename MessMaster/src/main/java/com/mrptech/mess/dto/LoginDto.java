@@ -40,6 +40,7 @@ public class LoginDto implements Serializable {
 	
 	private String fullName;
 	
+	private String url;
 	public LoginDto(){
 	}
 
@@ -123,6 +124,20 @@ public class LoginDto implements Serializable {
 
 	public void setFullName(String fullName) {
 		this.fullName = fullName;
+	}
+
+	/**
+	 * @return the url
+	 */
+	public String getUrl() {
+		return url;
+	}
+
+	/**
+	 * @param url the url to set
+	 */
+	public void setUrl(String url) {
+		this.url = url;
 	}
 	
 }
