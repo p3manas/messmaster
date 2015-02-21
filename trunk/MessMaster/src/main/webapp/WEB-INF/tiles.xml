@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" 
+	"http://tiles.apache.org/dtds/tiles-config_2_1.dtd">  
+<tiles-definitions> 
+
+	<definition name="mf.def" template="/pages/template.jsp">
+		<put-attribute name="title" value="Mess Management"/>
+		<put-attribute name="header" value="/pages/header.jsp" />
+		<put-attribute name="navigator" value="/pages/navigator.jsp" />
+		<put-attribute name="body" value="/pages/body.jsp" />
+		<put-attribute name="footer" value="/pages/footer.jsp" />
+	</definition>
+
+	<!-- Starts Atuhentication Management tiles -->
+	
+	<definition name="cprl.def" extends="mf.def">
+		<put-attribute name="title" value="MessMaster"/>
+		<put-attribute name="header" value="/pages/login/header.jsp" />
+		<put-attribute name="footer" value="/pages/login/footer.jsp" />
+	</definition>
+	<definition name="customer.login" extends="cprl.def">
+		<put-attribute name="title" value="MessMaster"/>
+		<put-attribute name="navigator" value="/pages/login/navigator.jsp" />
+		<put-attribute name="body" value="/pages/login/login.jsp" />
+	</definition>
+	
+	<definition name="customer.dashboard" extends="mf.def">
+		<put-attribute name="body" value="/pages/login/dashboard.jsp" />
+	</definition>
+	<definition name="test.dashboard" extends="mf.def">
+			<put-attribute name="body" value="/pages/login/underconstruction.jsp" />
+	</definition>
+	
+</tiles-definitions> 
