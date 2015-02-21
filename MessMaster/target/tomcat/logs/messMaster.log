@@ -1,0 +1,724 @@
+2015-02-20 07:52:23,363 -  INFO - org.springframework.web.context.ContextLoader - initWebApplicationContext - Root WebApplicationContext: initialization started
+2015-02-20 07:52:25,848 -  INFO - org.springframework.context.support.AbstractApplicationContext - prepareRefresh - Refreshing Root WebApplicationContext: startup date [Fri Feb 20 07:52:25 IST 2015]; root of context hierarchy
+2015-02-20 07:52:26,582 -  INFO - org.springframework.beans.factory.xml.XmlBeanDefinitionReader - loadBeanDefinitions - Loading XML bean definitions from URL [file:/C:/Users/Manas%20Ranjan/workspace/MessMaster/target/classes/mess-ApplicationContext.xml]
+2015-02-20 07:52:32,217 -  INFO - org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - <init> - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2015-02-20 07:52:33,077 -  INFO - org.springframework.web.servlet.handler.AbstractHandlerMethodMapping - registerHandlerMethod - Mapped "{[/login],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.mrptech.mess.controller.LoginController.doCustomerLogin(java.util.Map,javax.servlet.http.HttpServletRequest,java.util.Locale,com.mrptech.mess.dto.AuthenticationDto)
+2015-02-20 07:52:33,077 -  INFO - org.springframework.web.servlet.handler.AbstractHandlerMethodMapping - registerHandlerMethod - Mapped "{[/login],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.mrptech.mess.controller.LoginController.customerLogin(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+2015-02-20 07:52:33,077 -  INFO - org.springframework.web.servlet.handler.AbstractHandlerMethodMapping - registerHandlerMethod - Mapped "{[/login/test],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.mrptech.mess.controller.LoginController.viewAdmin(java.util.Map,java.lang.Long,java.util.Locale,javax.servlet.http.HttpServletRequest)
+2015-02-20 07:52:35,418 -  INFO - org.springframework.jdbc.datasource.DriverManagerDataSource - setDriverClassName - Loaded JDBC driver: oracle.jdbc.OracleDriver
+2015-02-20 07:52:39,088 -  INFO - org.hibernate.annotations.common.reflection.java.JavaReflectionManager - <clinit> - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2015-02-20 07:52:39,156 -  INFO - org.hibernate.Version - logVersion - HHH000412: Hibernate Core {4.3.4.Final}
+2015-02-20 07:52:39,172 -  INFO - org.hibernate.cfg.Environment - <clinit> - HHH000206: hibernate.properties not found
+2015-02-20 07:52:39,184 -  INFO - org.hibernate.cfg.Environment - buildBytecodeProvider - HHH000021: Bytecode provider name : javassist
+2015-02-20 07:52:43,727 -  INFO - org.hibernate.dialect.Dialect - <init> - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2015-02-20 07:52:45,220 -  INFO - org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - initiateService - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-02-20 07:52:45,236 -  INFO - org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - <init> - HHH000397: Using ASTQueryTranslatorFactory
+2015-02-20 07:52:48,820 -  INFO - org.hibernate.tool.hbm2ddl.SchemaUpdate - execute - HHH000228: Running hbm2ddl schema update
+2015-02-20 07:52:48,820 -  INFO - org.hibernate.tool.hbm2ddl.SchemaUpdate - execute - HHH000102: Fetching database metadata
+2015-02-20 07:52:49,289 -  INFO - org.hibernate.tool.hbm2ddl.SchemaUpdate - execute - HHH000396: Updating schema
+2015-02-20 07:52:49,492 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.FILE_COMPLAINT
+2015-02-20 07:52:49,492 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [created_by, iss_mast_mno_id, modified_on, comp_reason, node_code, status, modified_by, created_on, complaint_id, transaction_id]
+2015-02-20 07:52:49,492 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: []
+2015-02-20 07:52:49,492 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier213]
+2015-02-20 07:52:49,523 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.GROUP_ROLES
+2015-02-20 07:52:49,523 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [created_by, modified_on, modified_by, created_on, description, group_role_code]
+2015-02-20 07:52:49,523 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: []
+2015-02-20 07:52:49,523 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier17]
+2015-02-20 07:52:49,570 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.HIERARCHY
+2015-02-20 07:52:49,570 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [created_by, parent_node, modified_on, node_level, node_code, modified_by, status, created_on, description, expiration_date, effective_date, node_type]
+2015-02-20 07:52:49,570 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: []
+2015-02-20 07:52:49,570 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier18]
+2015-02-20 07:52:49,602 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.LANGUAGES
+2015-02-20 07:52:49,602 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [language, lang_code]
+2015-02-20 07:52:49,602 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: []
+2015-02-20 07:52:49,602 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier_lang]
+2015-02-20 07:52:49,633 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.PRODUCT
+2015-02-20 07:52:49,633 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [created_by, modified_on, modified_by, created_on, description, product_code]
+2015-02-20 07:52:49,633 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: []
+2015-02-20 07:52:49,633 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier24]
+2015-02-20 07:52:49,664 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.RESOURCES
+2015-02-20 07:52:49,680 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [modified_on, resource_id, sequence_no, resource_desc, modified_by, created_on, locale, resource_type, created_ by, module_code, url]
+2015-02-20 07:52:49,680 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: []
+2015-02-20 07:52:49,680 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier9]
+2015-02-20 07:52:49,711 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.ROLES
+2015-02-20 07:52:49,711 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [created_by, modified_on, status, modified_by, role_code, product_code, created_on, role_desc]
+2015-02-20 07:52:49,711 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: [depends on]
+2015-02-20 07:52:49,711 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier8]
+2015-02-20 07:52:49,742 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.ROLES_GROUP_ROLES
+2015-02-20 07:52:49,742 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [role_code, product_code, group_role_code]
+2015-02-20 07:52:49,742 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: [is part of_group_roles, is part of_roles]
+2015-02-20 07:52:49,742 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: []
+2015-02-20 07:52:49,789 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.ROLES_HIERARCHY
+2015-02-20 07:52:49,789 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [node_code, role_code, product_code]
+2015-02-20 07:52:49,789 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: [superset_roles, superset_hierarchy]
+2015-02-20 07:52:49,789 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: []
+2015-02-20 07:52:49,805 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.ROLES_RESOURCES
+2015-02-20 07:52:49,805 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [resource_id, role_code, product_code]
+2015-02-20 07:52:49,820 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: [relationship10_roles]
+2015-02-20 07:52:49,820 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: []
+2015-02-20 07:52:49,852 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.SYS_PREFERENCES
+2015-02-20 07:52:49,852 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [display_allowed, value_datatype, preference_code, modified_allowed, default_value, description, value_options]
+2015-02-20 07:52:49,852 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: []
+2015-02-20 07:52:49,867 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [sys_preferences_pk]
+2015-02-20 07:52:49,930 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.USERS
+2015-02-20 07:52:49,930 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [mno_id, name_prefix, home_state, shipping_state, modify_approved_on, created_on, level1_approved_by, home_zip_code, allowed_ip, religion, first_name, home_city, modified_by, from_time, col10, age, primary_phone_nbr, parent_account_id, to_time, created_by, pref_language, modified_on, secondary_phone_nbr3, account_id, delete_approved_on, secondary_phone_nbr2, user_type, status, middle_name, delete_approved_by, shipping_city, secondary_phone_nbr4, address_1, email, last_name, col5, col4, col7, col6, col1, col3, col2, level2_approved_on, remarks, col9, col8, home_address, shipping_address, node_code, secondary_phone_nbr, user_id, modify_approved_by, address_1_zip_code, address_1_city, msisdn, level2_approved_by, address_1_state, batch_id, level1_approved_on, shipping_zip_code, allowed_days, dob, authentication_type, last_login_on]
+2015-02-20 07:52:49,930 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: []
+2015-02-20 07:52:49,930 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier1]
+2015-02-20 07:52:49,961 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.USERS_GROUP_ROLES
+2015-02-20 07:52:49,961 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [account_id, group_role_code]
+2015-02-20 07:52:49,961 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: [are assigned_users, are assigned_group_roles]
+2015-02-20 07:52:49,961 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: []
+2015-02-20 07:52:49,992 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.USERS_KYC_INFO
+2015-02-20 07:52:50,008 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [created_by, modified_on, kyc_doc_id, account_id, kyc_id, modified_by, created_on, kyc_doc_type, doc_type_desc]
+2015-02-20 07:52:50,024 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: [are validated with]
+2015-02-20 07:52:50,024 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier4]
+2015-02-20 07:52:50,055 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.USER_AUDIT_TRAIL
+2015-02-20 07:52:50,055 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [modified_on, ip_address, account_id, created_on, action_taken_time, audit_id, user_id, action_result, action_desc, user_action_code]
+2015-02-20 07:52:50,055 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: [action create]
+2015-02-20 07:52:50,055 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier14]
+2015-02-20 07:52:50,102 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.USER_LOGON_AUDIT
+2015-02-20 07:52:50,102 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [ip_address, osuser, account_id, logoff_time, logon_time, user_id, logon_audit_id]
+2015-02-20 07:52:50,102 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: [access creates]
+2015-02-20 07:52:50,102 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier15]
+2015-02-20 07:52:50,133 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.USER_PASSWORDS
+2015-02-20 07:52:50,133 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [creation_date, account_id, pin, expiration_date, authentication_type, pin_status, pin_retry_count, password_change_flag]
+2015-02-20 07:52:50,133 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: [is authenticated with]
+2015-02-20 07:52:50,133 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier13]
+2015-02-20 07:52:50,164 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.USER_THRESHOLDS
+2015-02-20 07:52:50,164 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [threshold_id, account_id, threshold_category, threshold_ value]
+2015-02-20 07:52:50,164 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: [maintain]
+2015-02-20 07:52:50,164 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier5]
+2015-02-20 07:52:50,180 -  INFO - org.hibernate.tool.hbm2ddl.SchemaUpdate - execute - HHH000232: Schema update complete
+2015-02-20 07:52:51,264 -  INFO - org.springframework.web.servlet.handler.AbstractUrlHandlerMapping - registerHandler - Mapped URL path [/login] onto handler 'loginController'
+2015-02-20 07:52:51,265 -  INFO - org.springframework.web.servlet.handler.AbstractUrlHandlerMapping - registerHandler - Mapped URL path [/login/*] onto handler 'loginController'
+2015-02-20 07:52:51,518 -  INFO - org.springframework.web.context.ContextLoader - initWebApplicationContext - Root WebApplicationContext: initialization completed in 27905 ms
+2015-02-20 07:52:51,627 -  INFO - org.springframework.web.servlet.FrameworkServlet - initServletBean - FrameworkServlet 'mess': initialization started
+2015-02-20 07:52:51,643 -  INFO - org.springframework.context.support.AbstractApplicationContext - prepareRefresh - Refreshing WebApplicationContext for namespace 'mess-servlet': startup date [Fri Feb 20 07:52:51 IST 2015]; parent: Root WebApplicationContext
+2015-02-20 07:52:51,643 -  INFO - org.springframework.beans.factory.xml.XmlBeanDefinitionReader - loadBeanDefinitions - Loading XML bean definitions from ServletContext resource [/WEB-INF/mess-servlet.xml]
+2015-02-20 07:52:51,986 -  INFO - org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - <init> - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2015-02-20 07:52:52,033 -  INFO - org.springframework.web.servlet.handler.AbstractHandlerMethodMapping - registerHandlerMethod - Mapped "{[/login],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.mrptech.mess.controller.LoginController.doCustomerLogin(java.util.Map,javax.servlet.http.HttpServletRequest,java.util.Locale,com.mrptech.mess.dto.AuthenticationDto)
+2015-02-20 07:52:52,033 -  INFO - org.springframework.web.servlet.handler.AbstractHandlerMethodMapping - registerHandlerMethod - Mapped "{[/login],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.mrptech.mess.controller.LoginController.customerLogin(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+2015-02-20 07:52:52,033 -  INFO - org.springframework.web.servlet.handler.AbstractHandlerMethodMapping - registerHandlerMethod - Mapped "{[/login/test],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.mrptech.mess.controller.LoginController.viewAdmin(java.util.Map,java.lang.Long,java.util.Locale,javax.servlet.http.HttpServletRequest)
+2015-02-20 07:52:52,471 -  INFO - org.apache.tiles.access.TilesAccess - setContainer - Publishing TilesContext for context: org.springframework.web.servlet.view.tiles2.SpringWildcardServletTilesApplicationContext
+2015-02-20 07:52:52,705 -  INFO - org.springframework.web.servlet.FrameworkServlet - initServletBean - FrameworkServlet 'mess': initialization completed in 1063 ms
+2015-02-20 08:07:53,877 -  INFO - org.springframework.web.context.ContextLoader - initWebApplicationContext - Root WebApplicationContext: initialization started
+2015-02-20 08:07:54,166 -  INFO - org.springframework.context.support.AbstractApplicationContext - prepareRefresh - Refreshing Root WebApplicationContext: startup date [Fri Feb 20 08:07:54 IST 2015]; root of context hierarchy
+2015-02-20 08:07:54,312 -  INFO - org.springframework.beans.factory.xml.XmlBeanDefinitionReader - loadBeanDefinitions - Loading XML bean definitions from URL [file:/C:/Users/Manas%20Ranjan/workspace/MessMaster/target/classes/mess-ApplicationContext.xml]
+2015-02-20 08:07:55,728 -  INFO - org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - <init> - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2015-02-20 08:07:56,442 -  INFO - org.springframework.web.servlet.handler.AbstractHandlerMethodMapping - registerHandlerMethod - Mapped "{[/login],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.mrptech.mess.controller.LoginController.customerLogin(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+2015-02-20 08:07:56,447 -  INFO - org.springframework.web.servlet.handler.AbstractHandlerMethodMapping - registerHandlerMethod - Mapped "{[/login/test],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.mrptech.mess.controller.LoginController.viewAdmin(java.util.Map,java.lang.Long,java.util.Locale,javax.servlet.http.HttpServletRequest)
+2015-02-20 08:07:56,448 -  INFO - org.springframework.web.servlet.handler.AbstractHandlerMethodMapping - registerHandlerMethod - Mapped "{[/login],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.mrptech.mess.controller.LoginController.doCustomerLogin(java.util.Map,javax.servlet.http.HttpServletRequest,java.util.Locale,com.mrptech.mess.dto.AuthenticationDto)
+2015-02-20 08:07:58,297 -  INFO - org.springframework.jdbc.datasource.DriverManagerDataSource - setDriverClassName - Loaded JDBC driver: oracle.jdbc.OracleDriver
+2015-02-20 08:07:58,812 -  INFO - org.hibernate.annotations.common.reflection.java.JavaReflectionManager - <clinit> - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2015-02-20 08:07:58,840 -  INFO - org.hibernate.Version - logVersion - HHH000412: Hibernate Core {4.3.4.Final}
+2015-02-20 08:07:58,852 -  INFO - org.hibernate.cfg.Environment - <clinit> - HHH000206: hibernate.properties not found
+2015-02-20 08:07:58,860 -  INFO - org.hibernate.cfg.Environment - buildBytecodeProvider - HHH000021: Bytecode provider name : javassist
+2015-02-20 08:08:00,299 -  INFO - org.hibernate.dialect.Dialect - <init> - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2015-02-20 08:08:01,403 -  INFO - org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - initiateService - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-02-20 08:08:01,419 -  INFO - org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - <init> - HHH000397: Using ASTQueryTranslatorFactory
+2015-02-20 08:08:03,070 -  INFO - org.hibernate.tool.hbm2ddl.SchemaUpdate - execute - HHH000228: Running hbm2ddl schema update
+2015-02-20 08:08:03,074 -  INFO - org.hibernate.tool.hbm2ddl.SchemaUpdate - execute - HHH000102: Fetching database metadata
+2015-02-20 08:08:03,465 -  INFO - org.hibernate.tool.hbm2ddl.SchemaUpdate - execute - HHH000396: Updating schema
+2015-02-20 08:08:03,711 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.FILE_COMPLAINT
+2015-02-20 08:08:03,711 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [created_by, iss_mast_mno_id, modified_on, comp_reason, node_code, status, modified_by, created_on, complaint_id, transaction_id]
+2015-02-20 08:08:03,715 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: []
+2015-02-20 08:08:03,715 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier213]
+2015-02-20 08:08:03,768 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.GROUP_ROLES
+2015-02-20 08:08:03,772 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [created_by, modified_on, modified_by, created_on, description, group_role_code]
+2015-02-20 08:08:03,772 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: []
+2015-02-20 08:08:03,772 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier17]
+2015-02-20 08:08:03,820 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.HIERARCHY
+2015-02-20 08:08:03,820 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [created_by, parent_node, modified_on, node_level, node_code, modified_by, status, created_on, description, expiration_date, effective_date, node_type]
+2015-02-20 08:08:03,824 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: []
+2015-02-20 08:08:03,824 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier18]
+2015-02-20 08:08:03,856 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.LANGUAGES
+2015-02-20 08:08:03,856 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [language, lang_code]
+2015-02-20 08:08:03,860 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: []
+2015-02-20 08:08:03,864 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier_lang]
+2015-02-20 08:08:03,889 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.PRODUCT
+2015-02-20 08:08:03,889 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [created_by, modified_on, modified_by, created_on, description, product_code]
+2015-02-20 08:08:03,889 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: []
+2015-02-20 08:08:03,889 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier24]
+2015-02-20 08:08:03,935 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.RESOURCES
+2015-02-20 08:08:03,935 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [modified_on, resource_id, sequence_no, resource_desc, modified_by, created_on, locale, resource_type, created_ by, module_code, url]
+2015-02-20 08:08:03,939 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: []
+2015-02-20 08:08:03,939 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier9]
+2015-02-20 08:08:03,976 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.ROLES
+2015-02-20 08:08:03,976 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [created_by, modified_on, status, modified_by, role_code, product_code, created_on, role_desc]
+2015-02-20 08:08:03,980 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: [depends on]
+2015-02-20 08:08:03,980 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier8]
+2015-02-20 08:08:04,009 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.ROLES_GROUP_ROLES
+2015-02-20 08:08:04,009 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [role_code, product_code, group_role_code]
+2015-02-20 08:08:04,009 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: [is part of_group_roles, is part of_roles]
+2015-02-20 08:08:04,009 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: []
+2015-02-20 08:08:04,042 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.ROLES_HIERARCHY
+2015-02-20 08:08:04,042 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [node_code, role_code, product_code]
+2015-02-20 08:08:04,046 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: [superset_roles, superset_hierarchy]
+2015-02-20 08:08:04,046 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: []
+2015-02-20 08:08:04,070 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.ROLES_RESOURCES
+2015-02-20 08:08:04,070 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [resource_id, role_code, product_code]
+2015-02-20 08:08:04,074 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: [relationship10_roles]
+2015-02-20 08:08:04,074 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: []
+2015-02-20 08:08:04,106 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.SYS_PREFERENCES
+2015-02-20 08:08:04,110 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [display_allowed, value_datatype, preference_code, modified_allowed, default_value, description, value_options]
+2015-02-20 08:08:04,110 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: []
+2015-02-20 08:08:04,110 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [sys_preferences_pk]
+2015-02-20 08:08:04,184 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.USERS
+2015-02-20 08:08:04,184 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [mno_id, name_prefix, home_state, shipping_state, modify_approved_on, created_on, level1_approved_by, home_zip_code, allowed_ip, religion, first_name, home_city, modified_by, from_time, col10, age, primary_phone_nbr, parent_account_id, to_time, created_by, pref_language, modified_on, secondary_phone_nbr3, account_id, delete_approved_on, secondary_phone_nbr2, user_type, status, middle_name, delete_approved_by, shipping_city, secondary_phone_nbr4, address_1, email, last_name, col5, col4, col7, col6, col1, col3, col2, level2_approved_on, remarks, col9, col8, home_address, shipping_address, node_code, secondary_phone_nbr, user_id, modify_approved_by, address_1_zip_code, address_1_city, msisdn, level2_approved_by, address_1_state, batch_id, level1_approved_on, shipping_zip_code, allowed_days, dob, authentication_type, last_login_on]
+2015-02-20 08:08:04,184 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: []
+2015-02-20 08:08:04,188 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier1]
+2015-02-20 08:08:04,217 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.USERS_GROUP_ROLES
+2015-02-20 08:08:04,217 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [account_id, group_role_code]
+2015-02-20 08:08:04,217 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: [are assigned_users, are assigned_group_roles]
+2015-02-20 08:08:04,217 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: []
+2015-02-20 08:08:04,250 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.USERS_KYC_INFO
+2015-02-20 08:08:04,254 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [created_by, modified_on, kyc_doc_id, account_id, kyc_id, modified_by, created_on, kyc_doc_type, doc_type_desc]
+2015-02-20 08:08:04,254 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: [are validated with]
+2015-02-20 08:08:04,258 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier4]
+2015-02-20 08:08:04,275 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.USER_AUDIT_TRAIL
+2015-02-20 08:08:04,290 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [modified_on, ip_address, account_id, created_on, action_taken_time, audit_id, user_id, action_result, action_desc, user_action_code]
+2015-02-20 08:08:04,290 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: [action create]
+2015-02-20 08:08:04,290 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier14]
+2015-02-20 08:08:04,306 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.USER_LOGON_AUDIT
+2015-02-20 08:08:04,306 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [ip_address, osuser, account_id, logoff_time, logon_time, user_id, logon_audit_id]
+2015-02-20 08:08:04,306 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: [access creates]
+2015-02-20 08:08:04,322 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier15]
+2015-02-20 08:08:04,351 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.USER_PASSWORDS
+2015-02-20 08:08:04,355 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [creation_date, account_id, pin, expiration_date, authentication_type, pin_status, pin_retry_count, password_change_flag]
+2015-02-20 08:08:04,355 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: [is authenticated with]
+2015-02-20 08:08:04,355 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier13]
+2015-02-20 08:08:04,383 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.USER_THRESHOLDS
+2015-02-20 08:08:04,387 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [threshold_id, account_id, threshold_category, threshold_ value]
+2015-02-20 08:08:04,387 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: [maintain]
+2015-02-20 08:08:04,387 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier5]
+2015-02-20 08:08:04,391 -  INFO - org.hibernate.tool.hbm2ddl.SchemaUpdate - execute - HHH000232: Schema update complete
+2015-02-20 08:08:04,882 -  INFO - org.springframework.web.servlet.handler.AbstractUrlHandlerMapping - registerHandler - Mapped URL path [/login] onto handler 'loginController'
+2015-02-20 08:08:04,885 -  INFO - org.springframework.web.servlet.handler.AbstractUrlHandlerMapping - registerHandler - Mapped URL path [/login/*] onto handler 'loginController'
+2015-02-20 08:08:04,992 -  INFO - org.springframework.web.context.ContextLoader - initWebApplicationContext - Root WebApplicationContext: initialization completed in 11108 ms
+2015-02-20 08:08:05,474 -  INFO - org.springframework.context.support.AbstractApplicationContext - doClose - Closing Root WebApplicationContext: startup date [Fri Feb 20 08:07:54 IST 2015]; root of context hierarchy
+2015-02-20 21:42:21,796 -  INFO - org.springframework.web.context.ContextLoader - initWebApplicationContext - Root WebApplicationContext: initialization started
+2015-02-20 21:42:22,093 -  INFO - org.springframework.context.support.AbstractApplicationContext - prepareRefresh - Refreshing Root WebApplicationContext: startup date [Fri Feb 20 21:42:22 IST 2015]; root of context hierarchy
+2015-02-20 21:42:22,251 -  INFO - org.springframework.beans.factory.xml.XmlBeanDefinitionReader - loadBeanDefinitions - Loading XML bean definitions from URL [file:/C:/Users/Manas%20Ranjan/workspace/MessMaster/target/classes/mess-ApplicationContext.xml]
+2015-02-20 21:42:24,036 -  INFO - org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - <init> - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2015-02-20 21:42:24,697 -  INFO - org.springframework.web.servlet.handler.AbstractHandlerMethodMapping - registerHandlerMethod - Mapped "{[/login],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.mrptech.mess.controller.LoginController.customerLogin(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+2015-02-20 21:42:24,697 -  INFO - org.springframework.web.servlet.handler.AbstractHandlerMethodMapping - registerHandlerMethod - Mapped "{[/login/test],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.mrptech.mess.controller.LoginController.viewAdmin(java.util.Map,java.lang.Long,java.util.Locale,javax.servlet.http.HttpServletRequest)
+2015-02-20 21:42:24,697 -  INFO - org.springframework.web.servlet.handler.AbstractHandlerMethodMapping - registerHandlerMethod - Mapped "{[/login],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.mrptech.mess.controller.LoginController.doCustomerLogin(java.util.Map,javax.servlet.http.HttpServletRequest,java.util.Locale,com.mrptech.mess.dto.AuthenticationDto)
+2015-02-20 21:42:26,250 -  INFO - org.springframework.jdbc.datasource.DriverManagerDataSource - setDriverClassName - Loaded JDBC driver: oracle.jdbc.OracleDriver
+2015-02-20 21:42:26,674 -  INFO - org.hibernate.annotations.common.reflection.java.JavaReflectionManager - <clinit> - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2015-02-20 21:42:26,705 -  INFO - org.hibernate.Version - logVersion - HHH000412: Hibernate Core {4.3.4.Final}
+2015-02-20 21:42:26,721 -  INFO - org.hibernate.cfg.Environment - <clinit> - HHH000206: hibernate.properties not found
+2015-02-20 21:42:26,721 -  INFO - org.hibernate.cfg.Environment - buildBytecodeProvider - HHH000021: Bytecode provider name : javassist
+2015-02-20 21:42:28,754 -  INFO - org.hibernate.dialect.Dialect - <init> - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2015-02-20 21:42:30,134 -  INFO - org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - initiateService - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-02-20 21:42:30,154 -  INFO - org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - <init> - HHH000397: Using ASTQueryTranslatorFactory
+2015-02-20 21:42:32,255 -  INFO - org.hibernate.tool.hbm2ddl.SchemaUpdate - execute - HHH000228: Running hbm2ddl schema update
+2015-02-20 21:42:32,258 -  INFO - org.hibernate.tool.hbm2ddl.SchemaUpdate - execute - HHH000102: Fetching database metadata
+2015-02-20 21:42:32,888 -  INFO - org.hibernate.tool.hbm2ddl.SchemaUpdate - execute - HHH000396: Updating schema
+2015-02-20 21:42:41,044 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.FILE_COMPLAINT
+2015-02-20 21:42:41,044 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [created_by, iss_mast_mno_id, modified_on, comp_reason, node_code, status, modified_by, created_on, complaint_id, transaction_id]
+2015-02-20 21:42:41,060 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: []
+2015-02-20 21:42:41,060 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier213]
+2015-02-20 21:42:41,419 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.GROUP_ROLES
+2015-02-20 21:42:41,419 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [created_by, modified_on, modified_by, created_on, description, group_role_code]
+2015-02-20 21:42:41,419 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: []
+2015-02-20 21:42:41,419 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier17]
+2015-02-20 21:42:41,779 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.HIERARCHY
+2015-02-20 21:42:41,779 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [created_by, parent_node, modified_on, node_level, node_code, modified_by, status, created_on, description, expiration_date, effective_date, node_type]
+2015-02-20 21:42:41,779 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: []
+2015-02-20 21:42:41,779 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier18]
+2015-02-20 21:42:42,138 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.LANGUAGES
+2015-02-20 21:42:42,138 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [language, lang_code]
+2015-02-20 21:42:42,154 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: []
+2015-02-20 21:42:42,154 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier_lang]
+2015-02-20 21:42:42,534 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.PRODUCT
+2015-02-20 21:42:42,538 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [created_by, modified_on, modified_by, created_on, description, product_code]
+2015-02-20 21:42:42,538 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: []
+2015-02-20 21:42:42,538 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier24]
+2015-02-20 21:42:42,918 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.RESOURCES
+2015-02-20 21:42:42,918 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [modified_on, resource_id, sequence_no, resource_desc, modified_by, created_on, locale, resource_type, created_ by, module_code, url]
+2015-02-20 21:42:42,922 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: []
+2015-02-20 21:42:42,922 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier9]
+2015-02-20 21:42:43,298 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.ROLES
+2015-02-20 21:42:43,298 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [created_by, modified_on, status, modified_by, role_code, product_code, created_on, role_desc]
+2015-02-20 21:42:43,298 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: [depends on]
+2015-02-20 21:42:43,302 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier8]
+2015-02-20 21:42:43,666 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.ROLES_GROUP_ROLES
+2015-02-20 21:42:43,670 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [role_code, product_code, group_role_code]
+2015-02-20 21:42:43,670 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: [is part of_group_roles, is part of_roles]
+2015-02-20 21:42:43,670 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: []
+2015-02-20 21:42:44,038 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.ROLES_HIERARCHY
+2015-02-20 21:42:44,042 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [node_code, role_code, product_code]
+2015-02-20 21:42:44,042 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: [superset_roles, superset_hierarchy]
+2015-02-20 21:42:44,046 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: []
+2015-02-20 21:42:44,406 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.ROLES_RESOURCES
+2015-02-20 21:42:44,406 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [resource_id, role_code, product_code]
+2015-02-20 21:42:44,406 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: [relationship10_roles]
+2015-02-20 21:42:44,406 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: []
+2015-02-20 21:42:44,781 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.SYS_PREFERENCES
+2015-02-20 21:42:44,781 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [display_allowed, value_datatype, preference_code, modified_allowed, default_value, description, value_options]
+2015-02-20 21:42:44,781 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: []
+2015-02-20 21:42:44,781 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [sys_preferences_pk]
+2015-02-20 21:42:45,167 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.USERS
+2015-02-20 21:42:45,167 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [mno_id, name_prefix, home_state, shipping_state, modify_approved_on, created_on, level1_approved_by, home_zip_code, allowed_ip, religion, first_name, home_city, modified_by, from_time, col10, age, primary_phone_nbr, parent_account_id, to_time, created_by, pref_language, modified_on, secondary_phone_nbr3, account_id, delete_approved_on, secondary_phone_nbr2, user_type, status, middle_name, delete_approved_by, shipping_city, secondary_phone_nbr4, address_1, email, last_name, col5, col4, col7, col6, col1, col3, col2, level2_approved_on, remarks, col9, col8, home_address, shipping_address, node_code, secondary_phone_nbr, user_id, modify_approved_by, address_1_zip_code, address_1_city, msisdn, level2_approved_by, address_1_state, batch_id, level1_approved_on, shipping_zip_code, allowed_days, dob, authentication_type, last_login_on]
+2015-02-20 21:42:45,167 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: []
+2015-02-20 21:42:45,167 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier1]
+2015-02-20 21:42:45,563 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.USERS_GROUP_ROLES
+2015-02-20 21:42:45,563 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [account_id, group_role_code]
+2015-02-20 21:42:45,563 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: [are assigned_users, are assigned_group_roles]
+2015-02-20 21:42:45,563 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: []
+2015-02-20 21:42:45,953 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.USERS_KYC_INFO
+2015-02-20 21:42:45,953 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [created_by, modified_on, kyc_doc_id, account_id, kyc_id, modified_by, created_on, kyc_doc_type, doc_type_desc]
+2015-02-20 21:42:45,953 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: [are validated with]
+2015-02-20 21:42:45,953 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier4]
+2015-02-20 21:42:46,328 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.USER_AUDIT_TRAIL
+2015-02-20 21:42:46,328 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [modified_on, ip_address, account_id, created_on, action_taken_time, audit_id, user_id, action_result, action_desc, user_action_code]
+2015-02-20 21:42:46,344 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: [action create]
+2015-02-20 21:42:46,344 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier14]
+2015-02-20 21:42:46,688 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.USER_LOGON_AUDIT
+2015-02-20 21:42:46,688 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [ip_address, osuser, account_id, logoff_time, logon_time, user_id, logon_audit_id]
+2015-02-20 21:42:46,688 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: [access creates]
+2015-02-20 21:42:46,688 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier15]
+2015-02-20 21:42:47,047 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.USER_PASSWORDS
+2015-02-20 21:42:47,047 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [creation_date, account_id, pin, expiration_date, authentication_type, pin_status, pin_retry_count, password_change_flag]
+2015-02-20 21:42:47,047 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: [is authenticated with]
+2015-02-20 21:42:47,047 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier13]
+2015-02-20 21:42:47,391 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.USER_THRESHOLDS
+2015-02-20 21:42:47,391 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [threshold_id, account_id, threshold_category, threshold_ value]
+2015-02-20 21:42:47,391 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: [maintain]
+2015-02-20 21:42:47,391 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier5]
+2015-02-20 21:42:47,391 -  INFO - org.hibernate.tool.hbm2ddl.SchemaUpdate - execute - HHH000232: Schema update complete
+2015-02-20 21:42:47,766 -  INFO - org.springframework.web.servlet.handler.AbstractUrlHandlerMapping - registerHandler - Mapped URL path [/login] onto handler 'loginController'
+2015-02-20 21:42:47,766 -  INFO - org.springframework.web.servlet.handler.AbstractUrlHandlerMapping - registerHandler - Mapped URL path [/login/*] onto handler 'loginController'
+2015-02-20 21:42:47,860 -  INFO - org.springframework.web.context.ContextLoader - initWebApplicationContext - Root WebApplicationContext: initialization completed in 26049 ms
+2015-02-20 21:42:47,907 -  INFO - org.springframework.web.servlet.FrameworkServlet - initServletBean - FrameworkServlet 'mess': initialization started
+2015-02-20 21:42:47,922 -  INFO - org.springframework.context.support.AbstractApplicationContext - prepareRefresh - Refreshing WebApplicationContext for namespace 'mess-servlet': startup date [Fri Feb 20 21:42:47 IST 2015]; parent: Root WebApplicationContext
+2015-02-20 21:42:47,922 -  INFO - org.springframework.beans.factory.xml.XmlBeanDefinitionReader - loadBeanDefinitions - Loading XML bean definitions from ServletContext resource [/WEB-INF/mess-servlet.xml]
+2015-02-20 21:42:48,262 -  INFO - org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - <init> - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2015-02-20 21:42:48,309 -  INFO - org.springframework.web.servlet.handler.AbstractHandlerMethodMapping - registerHandlerMethod - Mapped "{[/login],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.mrptech.mess.controller.LoginController.customerLogin(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+2015-02-20 21:42:48,310 -  INFO - org.springframework.web.servlet.handler.AbstractHandlerMethodMapping - registerHandlerMethod - Mapped "{[/login/test],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.mrptech.mess.controller.LoginController.viewAdmin(java.util.Map,java.lang.Long,java.util.Locale,javax.servlet.http.HttpServletRequest)
+2015-02-20 21:42:48,311 -  INFO - org.springframework.web.servlet.handler.AbstractHandlerMethodMapping - registerHandlerMethod - Mapped "{[/login],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.mrptech.mess.controller.LoginController.doCustomerLogin(java.util.Map,javax.servlet.http.HttpServletRequest,java.util.Locale,com.mrptech.mess.dto.AuthenticationDto)
+2015-02-20 21:42:48,732 -  INFO - org.apache.tiles.access.TilesAccess - setContainer - Publishing TilesContext for context: org.springframework.web.servlet.view.tiles2.SpringWildcardServletTilesApplicationContext
+2015-02-20 21:42:48,823 -  INFO - org.springframework.web.servlet.FrameworkServlet - initServletBean - FrameworkServlet 'mess': initialization completed in 903 ms
+2015-02-20 21:42:58,927 -  WARN - org.hibernate.hql.internal.ast.HqlSqlWalker - generatePositionalParameter - [DEPRECATION] Encountered positional parameter near line 1, column 354.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+2015-02-20 21:43:59,143 -  INFO - org.springframework.web.context.ContextLoader - initWebApplicationContext - Root WebApplicationContext: initialization started
+2015-02-20 21:43:59,490 -  INFO - org.springframework.context.support.AbstractApplicationContext - prepareRefresh - Refreshing Root WebApplicationContext: startup date [Fri Feb 20 21:43:59 IST 2015]; root of context hierarchy
+2015-02-20 21:43:59,612 -  INFO - org.springframework.beans.factory.xml.XmlBeanDefinitionReader - loadBeanDefinitions - Loading XML bean definitions from URL [file:/C:/Users/Manas%20Ranjan/workspace/MessMaster/target/classes/mess-ApplicationContext.xml]
+2015-02-20 21:44:01,073 -  INFO - org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - <init> - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2015-02-20 21:44:01,999 -  INFO - org.springframework.web.servlet.handler.AbstractHandlerMethodMapping - registerHandlerMethod - Mapped "{[/login],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.mrptech.mess.controller.LoginController.customerLogin(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+2015-02-20 21:44:01,999 -  INFO - org.springframework.web.servlet.handler.AbstractHandlerMethodMapping - registerHandlerMethod - Mapped "{[/login/test],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.mrptech.mess.controller.LoginController.viewAdmin(java.util.Map,java.lang.Long,java.util.Locale,javax.servlet.http.HttpServletRequest)
+2015-02-20 21:44:01,999 -  INFO - org.springframework.web.servlet.handler.AbstractHandlerMethodMapping - registerHandlerMethod - Mapped "{[/login],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.mrptech.mess.controller.LoginController.doCustomerLogin(java.util.Map,javax.servlet.http.HttpServletRequest,java.util.Locale,com.mrptech.mess.dto.AuthenticationDto)
+2015-02-20 21:44:03,859 -  INFO - org.springframework.jdbc.datasource.DriverManagerDataSource - setDriverClassName - Loaded JDBC driver: oracle.jdbc.OracleDriver
+2015-02-20 21:44:04,406 -  INFO - org.hibernate.annotations.common.reflection.java.JavaReflectionManager - <clinit> - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2015-02-20 21:44:04,437 -  INFO - org.hibernate.Version - logVersion - HHH000412: Hibernate Core {4.3.4.Final}
+2015-02-20 21:44:04,452 -  INFO - org.hibernate.cfg.Environment - <clinit> - HHH000206: hibernate.properties not found
+2015-02-20 21:44:04,452 -  INFO - org.hibernate.cfg.Environment - buildBytecodeProvider - HHH000021: Bytecode provider name : javassist
+2015-02-20 21:44:06,032 -  INFO - org.hibernate.dialect.Dialect - <init> - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2015-02-20 21:44:07,493 -  INFO - org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - initiateService - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-02-20 21:44:07,525 -  INFO - org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - <init> - HHH000397: Using ASTQueryTranslatorFactory
+2015-02-20 21:44:09,056 -  INFO - org.hibernate.tool.hbm2ddl.SchemaUpdate - execute - HHH000228: Running hbm2ddl schema update
+2015-02-20 21:44:09,072 -  INFO - org.hibernate.tool.hbm2ddl.SchemaUpdate - execute - HHH000102: Fetching database metadata
+2015-02-20 21:44:09,353 -  INFO - org.hibernate.tool.hbm2ddl.SchemaUpdate - execute - HHH000396: Updating schema
+2015-02-20 21:44:09,572 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.FILE_COMPLAINT
+2015-02-20 21:44:09,572 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [created_by, iss_mast_mno_id, modified_on, comp_reason, node_code, status, modified_by, created_on, complaint_id, transaction_id]
+2015-02-20 21:44:09,572 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: []
+2015-02-20 21:44:09,572 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier213]
+2015-02-20 21:44:09,618 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.GROUP_ROLES
+2015-02-20 21:44:09,618 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [created_by, modified_on, modified_by, created_on, description, group_role_code]
+2015-02-20 21:44:09,618 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: []
+2015-02-20 21:44:09,618 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier17]
+2015-02-20 21:44:09,650 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.HIERARCHY
+2015-02-20 21:44:09,650 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [created_by, parent_node, modified_on, node_level, node_code, modified_by, status, created_on, description, expiration_date, effective_date, node_type]
+2015-02-20 21:44:09,650 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: []
+2015-02-20 21:44:09,650 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier18]
+2015-02-20 21:44:09,681 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.LANGUAGES
+2015-02-20 21:44:09,681 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [language, lang_code]
+2015-02-20 21:44:09,681 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: []
+2015-02-20 21:44:09,681 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier_lang]
+2015-02-20 21:44:09,712 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.PRODUCT
+2015-02-20 21:44:09,712 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [created_by, modified_on, modified_by, created_on, description, product_code]
+2015-02-20 21:44:09,712 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: []
+2015-02-20 21:44:09,712 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier24]
+2015-02-20 21:44:09,743 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.RESOURCES
+2015-02-20 21:44:09,743 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [modified_on, resource_id, sequence_no, resource_desc, modified_by, created_on, locale, resource_type, created_ by, module_code, url]
+2015-02-20 21:44:09,743 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: []
+2015-02-20 21:44:09,743 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier9]
+2015-02-20 21:44:09,775 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.ROLES
+2015-02-20 21:44:09,775 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [created_by, modified_on, status, modified_by, role_code, product_code, created_on, role_desc]
+2015-02-20 21:44:09,775 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: [depends on]
+2015-02-20 21:44:09,775 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier8]
+2015-02-20 21:44:09,806 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.ROLES_GROUP_ROLES
+2015-02-20 21:44:09,806 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [role_code, product_code, group_role_code]
+2015-02-20 21:44:09,806 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: [is part of_group_roles, is part of_roles]
+2015-02-20 21:44:09,806 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: []
+2015-02-20 21:44:09,837 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.ROLES_HIERARCHY
+2015-02-20 21:44:09,837 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [node_code, role_code, product_code]
+2015-02-20 21:44:09,837 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: [superset_roles, superset_hierarchy]
+2015-02-20 21:44:09,837 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: []
+2015-02-20 21:44:09,853 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.ROLES_RESOURCES
+2015-02-20 21:44:09,868 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [resource_id, role_code, product_code]
+2015-02-20 21:44:09,868 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: [relationship10_roles]
+2015-02-20 21:44:09,868 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: []
+2015-02-20 21:44:09,884 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.SYS_PREFERENCES
+2015-02-20 21:44:09,900 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [display_allowed, value_datatype, preference_code, modified_allowed, default_value, description, value_options]
+2015-02-20 21:44:09,900 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: []
+2015-02-20 21:44:09,900 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [sys_preferences_pk]
+2015-02-20 21:44:09,962 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.USERS
+2015-02-20 21:44:09,962 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [mno_id, name_prefix, home_state, shipping_state, modify_approved_on, created_on, level1_approved_by, home_zip_code, allowed_ip, religion, first_name, home_city, modified_by, from_time, col10, age, primary_phone_nbr, parent_account_id, to_time, created_by, pref_language, modified_on, secondary_phone_nbr3, account_id, delete_approved_on, secondary_phone_nbr2, user_type, status, middle_name, delete_approved_by, shipping_city, secondary_phone_nbr4, address_1, email, last_name, col5, col4, col7, col6, col1, col3, col2, level2_approved_on, remarks, col9, col8, home_address, shipping_address, node_code, secondary_phone_nbr, user_id, modify_approved_by, address_1_zip_code, address_1_city, msisdn, level2_approved_by, address_1_state, batch_id, level1_approved_on, shipping_zip_code, allowed_days, dob, authentication_type, last_login_on]
+2015-02-20 21:44:09,962 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: []
+2015-02-20 21:44:09,962 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier1]
+2015-02-20 21:44:09,993 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.USERS_GROUP_ROLES
+2015-02-20 21:44:09,993 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [account_id, group_role_code]
+2015-02-20 21:44:09,993 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: [are assigned_users, are assigned_group_roles]
+2015-02-20 21:44:09,993 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: []
+2015-02-20 21:44:10,025 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.USERS_KYC_INFO
+2015-02-20 21:44:10,025 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [created_by, modified_on, kyc_doc_id, account_id, kyc_id, modified_by, created_on, kyc_doc_type, doc_type_desc]
+2015-02-20 21:44:10,025 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: [are validated with]
+2015-02-20 21:44:10,025 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier4]
+2015-02-20 21:44:10,056 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.USER_AUDIT_TRAIL
+2015-02-20 21:44:10,056 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [modified_on, ip_address, account_id, created_on, action_taken_time, audit_id, user_id, action_result, action_desc, user_action_code]
+2015-02-20 21:44:10,056 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: [action create]
+2015-02-20 21:44:10,056 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier14]
+2015-02-20 21:44:10,087 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.USER_LOGON_AUDIT
+2015-02-20 21:44:10,087 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [ip_address, osuser, account_id, logoff_time, logon_time, user_id, logon_audit_id]
+2015-02-20 21:44:10,087 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: [access creates]
+2015-02-20 21:44:10,087 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier15]
+2015-02-20 21:44:10,118 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.USER_PASSWORDS
+2015-02-20 21:44:10,118 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [creation_date, account_id, pin, expiration_date, authentication_type, pin_status, pin_retry_count, password_change_flag]
+2015-02-20 21:44:10,118 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: [is authenticated with]
+2015-02-20 21:44:10,118 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier13]
+2015-02-20 21:44:10,150 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.USER_THRESHOLDS
+2015-02-20 21:44:10,150 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [threshold_id, account_id, threshold_category, threshold_ value]
+2015-02-20 21:44:10,150 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: [maintain]
+2015-02-20 21:44:10,150 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier5]
+2015-02-20 21:44:10,150 -  INFO - org.hibernate.tool.hbm2ddl.SchemaUpdate - execute - HHH000232: Schema update complete
+2015-02-20 21:44:10,681 -  INFO - org.springframework.web.servlet.handler.AbstractUrlHandlerMapping - registerHandler - Mapped URL path [/login] onto handler 'loginController'
+2015-02-20 21:44:10,681 -  INFO - org.springframework.web.servlet.handler.AbstractUrlHandlerMapping - registerHandler - Mapped URL path [/login/*] onto handler 'loginController'
+2015-02-20 21:44:10,806 -  INFO - org.springframework.web.context.ContextLoader - initWebApplicationContext - Root WebApplicationContext: initialization completed in 11663 ms
+2015-02-20 21:44:10,868 -  INFO - org.springframework.web.servlet.FrameworkServlet - initServletBean - FrameworkServlet 'mess': initialization started
+2015-02-20 21:44:10,876 -  INFO - org.springframework.context.support.AbstractApplicationContext - prepareRefresh - Refreshing WebApplicationContext for namespace 'mess-servlet': startup date [Fri Feb 20 21:44:10 IST 2015]; parent: Root WebApplicationContext
+2015-02-20 21:44:10,876 -  INFO - org.springframework.beans.factory.xml.XmlBeanDefinitionReader - loadBeanDefinitions - Loading XML bean definitions from ServletContext resource [/WEB-INF/mess-servlet.xml]
+2015-02-20 21:44:11,281 -  INFO - org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - <init> - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2015-02-20 21:44:11,328 -  INFO - org.springframework.web.servlet.handler.AbstractHandlerMethodMapping - registerHandlerMethod - Mapped "{[/login],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.mrptech.mess.controller.LoginController.customerLogin(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+2015-02-20 21:44:11,328 -  INFO - org.springframework.web.servlet.handler.AbstractHandlerMethodMapping - registerHandlerMethod - Mapped "{[/login/test],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.mrptech.mess.controller.LoginController.viewAdmin(java.util.Map,java.lang.Long,java.util.Locale,javax.servlet.http.HttpServletRequest)
+2015-02-20 21:44:11,328 -  INFO - org.springframework.web.servlet.handler.AbstractHandlerMethodMapping - registerHandlerMethod - Mapped "{[/login],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.mrptech.mess.controller.LoginController.doCustomerLogin(java.util.Map,javax.servlet.http.HttpServletRequest,java.util.Locale,com.mrptech.mess.dto.AuthenticationDto)
+2015-02-20 21:44:11,938 -  INFO - org.apache.tiles.access.TilesAccess - setContainer - Publishing TilesContext for context: org.springframework.web.servlet.view.tiles2.SpringWildcardServletTilesApplicationContext
+2015-02-20 21:44:12,079 -  INFO - org.springframework.web.servlet.FrameworkServlet - initServletBean - FrameworkServlet 'mess': initialization completed in 1204 ms
+2015-02-20 21:44:35,511 -  WARN - org.hibernate.hql.internal.ast.HqlSqlWalker - generatePositionalParameter - [DEPRECATION] Encountered positional parameter near line 1, column 354.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+2015-02-20 22:06:09,816 -  INFO - org.springframework.web.context.ContextLoader - initWebApplicationContext - Root WebApplicationContext: initialization started
+2015-02-20 22:06:10,180 -  INFO - org.springframework.context.support.AbstractApplicationContext - prepareRefresh - Refreshing Root WebApplicationContext: startup date [Fri Feb 20 22:06:10 IST 2015]; root of context hierarchy
+2015-02-20 22:06:10,304 -  INFO - org.springframework.beans.factory.xml.XmlBeanDefinitionReader - loadBeanDefinitions - Loading XML bean definitions from URL [file:/C:/Users/Manas%20Ranjan/workspace/MessMaster/target/classes/mess-ApplicationContext.xml]
+2015-02-20 22:06:11,686 -  INFO - org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - <init> - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2015-02-20 22:06:12,436 -  INFO - org.springframework.web.servlet.handler.AbstractHandlerMethodMapping - registerHandlerMethod - Mapped "{[/login],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.mrptech.mess.controller.LoginController.customerLogin(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+2015-02-20 22:06:12,436 -  INFO - org.springframework.web.servlet.handler.AbstractHandlerMethodMapping - registerHandlerMethod - Mapped "{[/login/test],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.mrptech.mess.controller.LoginController.viewAdmin(java.util.Map,java.lang.Long,java.util.Locale,javax.servlet.http.HttpServletRequest)
+2015-02-20 22:06:12,436 -  INFO - org.springframework.web.servlet.handler.AbstractHandlerMethodMapping - registerHandlerMethod - Mapped "{[/login],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.mrptech.mess.controller.LoginController.doCustomerLogin(java.util.Map,javax.servlet.http.HttpServletRequest,java.util.Locale,com.mrptech.mess.dto.AuthenticationDto)
+2015-02-20 22:06:49,775 -  INFO - org.springframework.web.context.ContextLoader - initWebApplicationContext - Root WebApplicationContext: initialization started
+2015-02-20 22:06:50,149 -  INFO - org.springframework.context.support.AbstractApplicationContext - prepareRefresh - Refreshing Root WebApplicationContext: startup date [Fri Feb 20 22:06:50 IST 2015]; root of context hierarchy
+2015-02-20 22:06:50,277 -  INFO - org.springframework.beans.factory.xml.XmlBeanDefinitionReader - loadBeanDefinitions - Loading XML bean definitions from URL [file:/C:/Users/Manas%20Ranjan/workspace/MessMaster/target/classes/mess-ApplicationContext.xml]
+2015-02-20 22:06:51,825 -  INFO - org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - <init> - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2015-02-20 22:06:52,575 -  INFO - org.springframework.web.servlet.handler.AbstractHandlerMethodMapping - registerHandlerMethod - Mapped "{[/login],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.mrptech.mess.controller.LoginController.doCustomerLogin(java.util.Map,javax.servlet.http.HttpServletRequest,java.util.Locale,com.mrptech.mess.dto.AuthenticationDto)
+2015-02-20 22:06:52,575 -  INFO - org.springframework.web.servlet.handler.AbstractHandlerMethodMapping - registerHandlerMethod - Mapped "{[/login],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.mrptech.mess.controller.LoginController.customerLogin(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+2015-02-20 22:06:52,575 -  INFO - org.springframework.web.servlet.handler.AbstractHandlerMethodMapping - registerHandlerMethod - Mapped "{[/login/test],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.mrptech.mess.controller.LoginController.viewAdmin(java.util.Map,java.lang.Long,java.util.Locale,javax.servlet.http.HttpServletRequest)
+2015-02-20 22:06:54,520 -  INFO - org.springframework.jdbc.datasource.DriverManagerDataSource - setDriverClassName - Loaded JDBC driver: oracle.jdbc.OracleDriver
+2015-02-20 22:06:55,114 -  INFO - org.hibernate.annotations.common.reflection.java.JavaReflectionManager - <clinit> - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2015-02-20 22:06:55,161 -  INFO - org.hibernate.Version - logVersion - HHH000412: Hibernate Core {4.3.4.Final}
+2015-02-20 22:06:55,176 -  INFO - org.hibernate.cfg.Environment - <clinit> - HHH000206: hibernate.properties not found
+2015-02-20 22:06:55,176 -  INFO - org.hibernate.cfg.Environment - buildBytecodeProvider - HHH000021: Bytecode provider name : javassist
+2015-02-20 22:06:56,872 -  INFO - org.hibernate.dialect.Dialect - <init> - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2015-02-20 22:06:58,153 -  INFO - org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - initiateService - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-02-20 22:06:58,185 -  INFO - org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - <init> - HHH000397: Using ASTQueryTranslatorFactory
+2015-02-20 22:06:59,810 -  INFO - org.hibernate.tool.hbm2ddl.SchemaUpdate - execute - HHH000228: Running hbm2ddl schema update
+2015-02-20 22:06:59,810 -  INFO - org.hibernate.tool.hbm2ddl.SchemaUpdate - execute - HHH000102: Fetching database metadata
+2015-02-20 22:07:00,169 -  INFO - org.hibernate.tool.hbm2ddl.SchemaUpdate - execute - HHH000396: Updating schema
+2015-02-20 22:07:07,821 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.FILE_COMPLAINT
+2015-02-20 22:07:07,821 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [created_by, iss_mast_mno_id, modified_on, comp_reason, node_code, status, modified_by, created_on, complaint_id, transaction_id]
+2015-02-20 22:07:07,821 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: []
+2015-02-20 22:07:07,821 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier213]
+2015-02-20 22:07:08,309 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.GROUP_ROLES
+2015-02-20 22:07:08,309 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [created_by, modified_on, modified_by, created_on, description, group_role_code]
+2015-02-20 22:07:08,313 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: []
+2015-02-20 22:07:08,313 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier17]
+2015-02-20 22:07:08,697 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.HIERARCHY
+2015-02-20 22:07:08,701 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [created_by, parent_node, modified_on, node_level, node_code, modified_by, status, created_on, description, expiration_date, effective_date, node_type]
+2015-02-20 22:07:08,701 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: []
+2015-02-20 22:07:08,701 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier18]
+2015-02-20 22:07:09,069 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.LANGUAGES
+2015-02-20 22:07:09,069 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [language, lang_code]
+2015-02-20 22:07:09,073 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: []
+2015-02-20 22:07:09,073 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier_lang]
+2015-02-20 22:07:09,473 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.PRODUCT
+2015-02-20 22:07:09,473 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [created_by, modified_on, modified_by, created_on, description, product_code]
+2015-02-20 22:07:09,477 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: []
+2015-02-20 22:07:09,477 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier24]
+2015-02-20 22:07:09,869 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.RESOURCES
+2015-02-20 22:07:09,869 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [modified_on, resource_id, sequence_no, resource_desc, modified_by, created_on, locale, resource_type, created_ by, module_code, url]
+2015-02-20 22:07:09,869 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: []
+2015-02-20 22:07:09,873 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier9]
+2015-02-20 22:07:10,254 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.ROLES
+2015-02-20 22:07:10,254 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [created_by, modified_on, status, modified_by, role_code, product_code, created_on, role_desc]
+2015-02-20 22:07:10,254 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: [depends on]
+2015-02-20 22:07:10,254 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier8]
+2015-02-20 22:07:10,629 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.ROLES_GROUP_ROLES
+2015-02-20 22:07:10,629 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [role_code, product_code, group_role_code]
+2015-02-20 22:07:10,629 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: [is part of_group_roles, is part of_roles]
+2015-02-20 22:07:10,629 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: []
+2015-02-20 22:07:11,041 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.ROLES_HIERARCHY
+2015-02-20 22:07:11,045 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [node_code, role_code, product_code]
+2015-02-20 22:07:11,045 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: [superset_roles, superset_hierarchy]
+2015-02-20 22:07:11,045 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: []
+2015-02-20 22:07:11,437 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.ROLES_RESOURCES
+2015-02-20 22:07:11,441 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [resource_id, role_code, product_code]
+2015-02-20 22:07:11,441 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: [relationship10_roles]
+2015-02-20 22:07:11,441 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: []
+2015-02-20 22:07:11,821 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.SYS_PREFERENCES
+2015-02-20 22:07:11,821 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [display_allowed, value_datatype, preference_code, modified_allowed, default_value, description, value_options]
+2015-02-20 22:07:11,821 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: []
+2015-02-20 22:07:11,825 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [sys_preferences_pk]
+2015-02-20 22:07:12,237 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.USERS
+2015-02-20 22:07:12,237 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [mno_id, name_prefix, home_state, shipping_state, modify_approved_on, created_on, level1_approved_by, home_zip_code, allowed_ip, religion, first_name, home_city, modified_by, from_time, col10, age, primary_phone_nbr, parent_account_id, to_time, created_by, pref_language, modified_on, secondary_phone_nbr3, account_id, delete_approved_on, secondary_phone_nbr2, user_type, status, middle_name, delete_approved_by, shipping_city, secondary_phone_nbr4, address_1, email, last_name, col5, col4, col7, col6, col1, col3, col2, level2_approved_on, remarks, col9, col8, home_address, shipping_address, node_code, secondary_phone_nbr, user_id, modify_approved_by, address_1_zip_code, address_1_city, msisdn, level2_approved_by, address_1_state, batch_id, level1_approved_on, shipping_zip_code, allowed_days, dob, authentication_type, last_login_on]
+2015-02-20 22:07:12,241 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: []
+2015-02-20 22:07:12,241 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier1]
+2015-02-20 22:07:12,609 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.USERS_GROUP_ROLES
+2015-02-20 22:07:12,613 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [account_id, group_role_code]
+2015-02-20 22:07:12,613 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: [are assigned_users, are assigned_group_roles]
+2015-02-20 22:07:12,613 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: []
+2015-02-20 22:07:12,978 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.USERS_KYC_INFO
+2015-02-20 22:07:12,978 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [created_by, modified_on, kyc_doc_id, account_id, kyc_id, modified_by, created_on, kyc_doc_type, doc_type_desc]
+2015-02-20 22:07:12,978 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: [are validated with]
+2015-02-20 22:07:12,978 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier4]
+2015-02-20 22:07:13,368 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.USER_AUDIT_TRAIL
+2015-02-20 22:07:13,368 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [modified_on, ip_address, account_id, created_on, action_taken_time, audit_id, user_id, action_result, action_desc, user_action_code]
+2015-02-20 22:07:13,368 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: [action create]
+2015-02-20 22:07:13,368 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier14]
+2015-02-20 22:07:13,728 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.USER_LOGON_AUDIT
+2015-02-20 22:07:13,728 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [ip_address, osuser, account_id, logoff_time, logon_time, user_id, logon_audit_id]
+2015-02-20 22:07:13,728 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: [access creates]
+2015-02-20 22:07:13,728 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier15]
+2015-02-20 22:07:14,165 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.USER_PASSWORDS
+2015-02-20 22:07:14,165 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [creation_date, account_id, pin, expiration_date, authentication_type, pin_status, pin_retry_count, password_change_flag]
+2015-02-20 22:07:14,165 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: [is authenticated with]
+2015-02-20 22:07:14,165 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier13]
+2015-02-20 22:07:14,509 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.USER_THRESHOLDS
+2015-02-20 22:07:14,509 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [threshold_id, account_id, threshold_category, threshold_ value]
+2015-02-20 22:07:14,509 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: [maintain]
+2015-02-20 22:07:14,509 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier5]
+2015-02-20 22:07:14,525 -  INFO - org.hibernate.tool.hbm2ddl.SchemaUpdate - execute - HHH000232: Schema update complete
+2015-02-20 22:07:15,087 -  INFO - org.springframework.web.servlet.handler.AbstractUrlHandlerMapping - registerHandler - Mapped URL path [/login] onto handler 'loginController'
+2015-02-20 22:07:15,087 -  INFO - org.springframework.web.servlet.handler.AbstractUrlHandlerMapping - registerHandler - Mapped URL path [/login/*] onto handler 'loginController'
+2015-02-20 22:07:15,228 -  INFO - org.springframework.web.context.ContextLoader - initWebApplicationContext - Root WebApplicationContext: initialization completed in 25445 ms
+2015-02-20 22:07:15,275 -  INFO - org.springframework.web.servlet.FrameworkServlet - initServletBean - FrameworkServlet 'mess': initialization started
+2015-02-20 22:07:15,291 -  INFO - org.springframework.context.support.AbstractApplicationContext - prepareRefresh - Refreshing WebApplicationContext for namespace 'mess-servlet': startup date [Fri Feb 20 22:07:15 IST 2015]; parent: Root WebApplicationContext
+2015-02-20 22:07:15,291 -  INFO - org.springframework.beans.factory.xml.XmlBeanDefinitionReader - loadBeanDefinitions - Loading XML bean definitions from ServletContext resource [/WEB-INF/mess-servlet.xml]
+2015-02-20 22:07:15,666 -  INFO - org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - <init> - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2015-02-20 22:07:15,713 -  INFO - org.springframework.web.servlet.handler.AbstractHandlerMethodMapping - registerHandlerMethod - Mapped "{[/login],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.mrptech.mess.controller.LoginController.doCustomerLogin(java.util.Map,javax.servlet.http.HttpServletRequest,java.util.Locale,com.mrptech.mess.dto.AuthenticationDto)
+2015-02-20 22:07:15,713 -  INFO - org.springframework.web.servlet.handler.AbstractHandlerMethodMapping - registerHandlerMethod - Mapped "{[/login],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.mrptech.mess.controller.LoginController.customerLogin(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+2015-02-20 22:07:15,713 -  INFO - org.springframework.web.servlet.handler.AbstractHandlerMethodMapping - registerHandlerMethod - Mapped "{[/login/test],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.mrptech.mess.controller.LoginController.viewAdmin(java.util.Map,java.lang.Long,java.util.Locale,javax.servlet.http.HttpServletRequest)
+2015-02-20 22:07:16,296 -  INFO - org.apache.tiles.access.TilesAccess - setContainer - Publishing TilesContext for context: org.springframework.web.servlet.view.tiles2.SpringWildcardServletTilesApplicationContext
+2015-02-20 22:07:16,437 -  INFO - org.springframework.web.servlet.FrameworkServlet - initServletBean - FrameworkServlet 'mess': initialization completed in 1147 ms
+2015-02-20 22:07:29,233 -  WARN - org.hibernate.hql.internal.ast.HqlSqlWalker - generatePositionalParameter - [DEPRECATION] Encountered positional parameter near line 1, column 354.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+2015-02-20 22:14:28,914 -  INFO - org.springframework.web.context.ContextLoader - initWebApplicationContext - Root WebApplicationContext: initialization started
+2015-02-20 22:14:29,017 -  INFO - org.springframework.context.support.AbstractApplicationContext - prepareRefresh - Refreshing Root WebApplicationContext: startup date [Fri Feb 20 22:14:29 IST 2015]; root of context hierarchy
+2015-02-20 22:14:29,056 -  INFO - org.springframework.beans.factory.xml.XmlBeanDefinitionReader - loadBeanDefinitions - Loading XML bean definitions from URL [file:/C:/Users/Manas%20Ranjan/workspace/MessMaster/target/classes/mess-ApplicationContext.xml]
+2015-02-20 22:14:29,610 -  INFO - org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - <init> - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2015-02-20 22:14:30,157 -  INFO - org.springframework.web.servlet.handler.AbstractHandlerMethodMapping - registerHandlerMethod - Mapped "{[/login],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.mrptech.mess.controller.LoginController.doCustomerLogin(java.util.Map,javax.servlet.http.HttpServletRequest,java.util.Locale,com.mrptech.mess.dto.AuthenticationDto)
+2015-02-20 22:14:30,157 -  INFO - org.springframework.web.servlet.handler.AbstractHandlerMethodMapping - registerHandlerMethod - Mapped "{[/login],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.mrptech.mess.controller.LoginController.customerLogin(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+2015-02-20 22:14:30,157 -  INFO - org.springframework.web.servlet.handler.AbstractHandlerMethodMapping - registerHandlerMethod - Mapped "{[/login/test],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.mrptech.mess.controller.LoginController.viewAdmin(java.util.Map,java.lang.Long,java.util.Locale,javax.servlet.http.HttpServletRequest)
+2015-02-20 22:14:31,610 -  INFO - org.springframework.jdbc.datasource.DriverManagerDataSource - setDriverClassName - Loaded JDBC driver: oracle.jdbc.OracleDriver
+2015-02-20 22:14:32,016 -  INFO - org.hibernate.annotations.common.reflection.java.JavaReflectionManager - <clinit> - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2015-02-20 22:14:32,047 -  INFO - org.hibernate.Version - logVersion - HHH000412: Hibernate Core {4.3.4.Final}
+2015-02-20 22:14:32,047 -  INFO - org.hibernate.cfg.Environment - <clinit> - HHH000206: hibernate.properties not found
+2015-02-20 22:14:32,047 -  INFO - org.hibernate.cfg.Environment - buildBytecodeProvider - HHH000021: Bytecode provider name : javassist
+2015-02-20 22:14:33,540 -  INFO - org.hibernate.dialect.Dialect - <init> - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2015-02-20 22:14:34,588 -  INFO - org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - initiateService - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-02-20 22:14:34,603 -  INFO - org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - <init> - HHH000397: Using ASTQueryTranslatorFactory
+2015-02-20 22:14:35,931 -  INFO - org.hibernate.tool.hbm2ddl.SchemaUpdate - execute - HHH000228: Running hbm2ddl schema update
+2015-02-20 22:14:35,931 -  INFO - org.hibernate.tool.hbm2ddl.SchemaUpdate - execute - HHH000102: Fetching database metadata
+2015-02-20 22:14:36,228 -  INFO - org.hibernate.tool.hbm2ddl.SchemaUpdate - execute - HHH000396: Updating schema
+2015-02-20 22:14:36,463 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.FILE_COMPLAINT
+2015-02-20 22:14:36,463 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [created_by, iss_mast_mno_id, modified_on, comp_reason, node_code, status, modified_by, created_on, complaint_id, transaction_id]
+2015-02-20 22:14:36,478 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: []
+2015-02-20 22:14:36,478 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier213]
+2015-02-20 22:14:36,509 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.GROUP_ROLES
+2015-02-20 22:14:36,509 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [created_by, modified_on, modified_by, created_on, description, group_role_code]
+2015-02-20 22:14:36,509 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: []
+2015-02-20 22:14:36,509 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier17]
+2015-02-20 22:14:36,572 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.HIERARCHY
+2015-02-20 22:14:36,572 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [created_by, parent_node, modified_on, node_level, node_code, modified_by, status, created_on, description, expiration_date, effective_date, node_type]
+2015-02-20 22:14:36,572 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: []
+2015-02-20 22:14:36,572 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier18]
+2015-02-20 22:14:36,603 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.LANGUAGES
+2015-02-20 22:14:36,603 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [language, lang_code]
+2015-02-20 22:14:36,603 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: []
+2015-02-20 22:14:36,603 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier_lang]
+2015-02-20 22:14:36,634 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.PRODUCT
+2015-02-20 22:14:36,634 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [created_by, modified_on, modified_by, created_on, description, product_code]
+2015-02-20 22:14:36,634 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: []
+2015-02-20 22:14:36,634 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier24]
+2015-02-20 22:14:36,666 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.RESOURCES
+2015-02-20 22:14:36,666 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [modified_on, resource_id, sequence_no, resource_desc, modified_by, created_on, locale, resource_type, created_ by, module_code, url]
+2015-02-20 22:14:36,666 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: []
+2015-02-20 22:14:36,666 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier9]
+2015-02-20 22:14:36,697 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.ROLES
+2015-02-20 22:14:36,697 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [created_by, modified_on, status, modified_by, role_code, product_code, created_on, role_desc]
+2015-02-20 22:14:36,697 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: [depends on]
+2015-02-20 22:14:36,697 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier8]
+2015-02-20 22:14:36,728 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.ROLES_GROUP_ROLES
+2015-02-20 22:14:36,728 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [role_code, product_code, group_role_code]
+2015-02-20 22:14:36,728 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: [is part of_group_roles, is part of_roles]
+2015-02-20 22:14:36,728 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: []
+2015-02-20 22:14:36,744 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.ROLES_HIERARCHY
+2015-02-20 22:14:36,744 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [node_code, role_code, product_code]
+2015-02-20 22:14:36,759 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: [superset_roles, superset_hierarchy]
+2015-02-20 22:14:36,759 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: []
+2015-02-20 22:14:36,775 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.ROLES_RESOURCES
+2015-02-20 22:14:36,775 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [resource_id, role_code, product_code]
+2015-02-20 22:14:36,775 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: [relationship10_roles]
+2015-02-20 22:14:36,775 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: []
+2015-02-20 22:14:36,806 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.SYS_PREFERENCES
+2015-02-20 22:14:36,806 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [display_allowed, value_datatype, preference_code, modified_allowed, default_value, description, value_options]
+2015-02-20 22:14:36,806 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: []
+2015-02-20 22:14:36,806 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [sys_preferences_pk]
+2015-02-20 22:14:36,869 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.USERS
+2015-02-20 22:14:36,884 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [mno_id, name_prefix, home_state, shipping_state, modify_approved_on, created_on, level1_approved_by, home_zip_code, allowed_ip, religion, first_name, home_city, modified_by, from_time, col10, age, primary_phone_nbr, parent_account_id, to_time, created_by, pref_language, modified_on, secondary_phone_nbr3, account_id, delete_approved_on, secondary_phone_nbr2, user_type, status, middle_name, delete_approved_by, shipping_city, secondary_phone_nbr4, address_1, email, last_name, col5, col4, col7, col6, col1, col3, col2, level2_approved_on, remarks, col9, col8, home_address, shipping_address, node_code, secondary_phone_nbr, user_id, modify_approved_by, address_1_zip_code, address_1_city, msisdn, level2_approved_by, address_1_state, batch_id, level1_approved_on, shipping_zip_code, allowed_days, dob, authentication_type, last_login_on]
+2015-02-20 22:14:36,884 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: []
+2015-02-20 22:14:36,884 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier1]
+2015-02-20 22:14:36,900 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.USERS_GROUP_ROLES
+2015-02-20 22:14:36,900 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [account_id, group_role_code]
+2015-02-20 22:14:36,900 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: [are assigned_users, are assigned_group_roles]
+2015-02-20 22:14:36,900 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: []
+2015-02-20 22:14:36,931 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.USERS_KYC_INFO
+2015-02-20 22:14:36,931 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [created_by, modified_on, kyc_doc_id, account_id, kyc_id, modified_by, created_on, kyc_doc_type, doc_type_desc]
+2015-02-20 22:14:36,931 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: [are validated with]
+2015-02-20 22:14:36,931 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier4]
+2015-02-20 22:14:36,963 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.USER_AUDIT_TRAIL
+2015-02-20 22:14:36,978 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [modified_on, ip_address, account_id, created_on, action_taken_time, audit_id, user_id, action_result, action_desc, user_action_code]
+2015-02-20 22:14:36,978 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: [action create]
+2015-02-20 22:14:36,978 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier14]
+2015-02-20 22:14:36,994 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.USER_LOGON_AUDIT
+2015-02-20 22:14:36,994 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [ip_address, osuser, account_id, logoff_time, logon_time, user_id, logon_audit_id]
+2015-02-20 22:14:37,009 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: [access creates]
+2015-02-20 22:14:37,009 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier15]
+2015-02-20 22:14:37,025 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.USER_PASSWORDS
+2015-02-20 22:14:37,025 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [creation_date, account_id, pin, expiration_date, authentication_type, pin_status, pin_retry_count, password_change_flag]
+2015-02-20 22:14:37,041 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: [is authenticated with]
+2015-02-20 22:14:37,041 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier13]
+2015-02-20 22:14:37,056 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.USER_THRESHOLDS
+2015-02-20 22:14:37,056 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [threshold_id, account_id, threshold_category, threshold_ value]
+2015-02-20 22:14:37,056 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: [maintain]
+2015-02-20 22:14:37,056 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier5]
+2015-02-20 22:14:37,072 -  INFO - org.hibernate.tool.hbm2ddl.SchemaUpdate - execute - HHH000232: Schema update complete
+2015-02-20 22:14:37,624 -  INFO - org.springframework.web.servlet.handler.AbstractUrlHandlerMapping - registerHandler - Mapped URL path [/login] onto handler 'loginController'
+2015-02-20 22:14:37,639 -  INFO - org.springframework.web.servlet.handler.AbstractUrlHandlerMapping - registerHandler - Mapped URL path [/login/*] onto handler 'loginController'
+2015-02-20 22:14:37,718 -  INFO - org.springframework.web.context.ContextLoader - initWebApplicationContext - Root WebApplicationContext: initialization completed in 8800 ms
+2015-02-20 22:14:37,783 -  INFO - org.springframework.web.servlet.FrameworkServlet - initServletBean - FrameworkServlet 'mess': initialization started
+2015-02-20 22:14:37,800 -  INFO - org.springframework.context.support.AbstractApplicationContext - prepareRefresh - Refreshing WebApplicationContext for namespace 'mess-servlet': startup date [Fri Feb 20 22:14:37 IST 2015]; parent: Root WebApplicationContext
+2015-02-20 22:14:37,804 -  INFO - org.springframework.beans.factory.xml.XmlBeanDefinitionReader - loadBeanDefinitions - Loading XML bean definitions from ServletContext resource [/WEB-INF/mess-servlet.xml]
+2015-02-20 22:14:38,204 -  INFO - org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - <init> - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2015-02-20 22:14:38,251 -  INFO - org.springframework.web.servlet.handler.AbstractHandlerMethodMapping - registerHandlerMethod - Mapped "{[/login],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.mrptech.mess.controller.LoginController.doCustomerLogin(java.util.Map,javax.servlet.http.HttpServletRequest,java.util.Locale,com.mrptech.mess.dto.AuthenticationDto)
+2015-02-20 22:14:38,251 -  INFO - org.springframework.web.servlet.handler.AbstractHandlerMethodMapping - registerHandlerMethod - Mapped "{[/login],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.mrptech.mess.controller.LoginController.customerLogin(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+2015-02-20 22:14:38,251 -  INFO - org.springframework.web.servlet.handler.AbstractHandlerMethodMapping - registerHandlerMethod - Mapped "{[/login/test],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.mrptech.mess.controller.LoginController.viewAdmin(java.util.Map,java.lang.Long,java.util.Locale,javax.servlet.http.HttpServletRequest)
+2015-02-20 22:14:38,683 -  INFO - org.apache.tiles.access.TilesAccess - setContainer - Publishing TilesContext for context: org.springframework.web.servlet.view.tiles2.SpringWildcardServletTilesApplicationContext
+2015-02-20 22:14:38,777 -  INFO - org.springframework.web.servlet.FrameworkServlet - initServletBean - FrameworkServlet 'mess': initialization completed in 990 ms
+2015-02-20 22:15:09,081 -  INFO - org.springframework.web.context.ContextLoader - initWebApplicationContext - Root WebApplicationContext: initialization started
+2015-02-20 22:15:09,344 -  INFO - org.springframework.context.support.AbstractApplicationContext - prepareRefresh - Refreshing Root WebApplicationContext: startup date [Fri Feb 20 22:15:09 IST 2015]; root of context hierarchy
+2015-02-20 22:15:09,460 -  INFO - org.springframework.beans.factory.xml.XmlBeanDefinitionReader - loadBeanDefinitions - Loading XML bean definitions from URL [file:/C:/Users/Manas%20Ranjan/workspace/MessMaster/target/classes/mess-ApplicationContext.xml]
+2015-02-20 22:15:10,960 -  INFO - org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - <init> - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2015-02-20 22:15:11,531 -  INFO - org.springframework.web.servlet.handler.AbstractHandlerMethodMapping - registerHandlerMethod - Mapped "{[/login],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.mrptech.mess.controller.LoginController.doCustomerLogin(java.util.Map,javax.servlet.http.HttpServletRequest,java.util.Locale,com.mrptech.mess.dto.AuthenticationDto)
+2015-02-20 22:15:11,531 -  INFO - org.springframework.web.servlet.handler.AbstractHandlerMethodMapping - registerHandlerMethod - Mapped "{[/login],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.mrptech.mess.controller.LoginController.customerLogin(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+2015-02-20 22:15:11,531 -  INFO - org.springframework.web.servlet.handler.AbstractHandlerMethodMapping - registerHandlerMethod - Mapped "{[/login/test],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.mrptech.mess.controller.LoginController.viewAdmin(java.util.Map,java.lang.Long,java.util.Locale,javax.servlet.http.HttpServletRequest)
+2015-02-20 22:15:13,050 -  INFO - org.springframework.jdbc.datasource.DriverManagerDataSource - setDriverClassName - Loaded JDBC driver: oracle.jdbc.OracleDriver
+2015-02-20 22:15:13,456 -  INFO - org.hibernate.annotations.common.reflection.java.JavaReflectionManager - <clinit> - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2015-02-20 22:15:13,472 -  INFO - org.hibernate.Version - logVersion - HHH000412: Hibernate Core {4.3.4.Final}
+2015-02-20 22:15:13,487 -  INFO - org.hibernate.cfg.Environment - <clinit> - HHH000206: hibernate.properties not found
+2015-02-20 22:15:13,503 -  INFO - org.hibernate.cfg.Environment - buildBytecodeProvider - HHH000021: Bytecode provider name : javassist
+2015-02-20 22:15:15,130 -  INFO - org.hibernate.dialect.Dialect - <init> - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2015-02-20 22:15:16,267 -  INFO - org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - initiateService - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-02-20 22:15:16,283 -  INFO - org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - <init> - HHH000397: Using ASTQueryTranslatorFactory
+2015-02-20 22:15:18,164 -  INFO - org.hibernate.tool.hbm2ddl.SchemaUpdate - execute - HHH000228: Running hbm2ddl schema update
+2015-02-20 22:15:18,172 -  INFO - org.hibernate.tool.hbm2ddl.SchemaUpdate - execute - HHH000102: Fetching database metadata
+2015-02-20 22:15:18,496 -  INFO - org.hibernate.tool.hbm2ddl.SchemaUpdate - execute - HHH000396: Updating schema
+2015-02-20 22:15:18,690 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.FILE_COMPLAINT
+2015-02-20 22:15:18,690 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [created_by, iss_mast_mno_id, modified_on, comp_reason, node_code, status, modified_by, created_on, complaint_id, transaction_id]
+2015-02-20 22:15:18,690 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: []
+2015-02-20 22:15:18,690 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier213]
+2015-02-20 22:15:18,721 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.GROUP_ROLES
+2015-02-20 22:15:18,721 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [created_by, modified_on, modified_by, created_on, description, group_role_code]
+2015-02-20 22:15:18,737 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: []
+2015-02-20 22:15:18,737 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier17]
+2015-02-20 22:15:18,768 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.HIERARCHY
+2015-02-20 22:15:18,768 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [created_by, parent_node, modified_on, node_level, node_code, modified_by, status, created_on, description, expiration_date, effective_date, node_type]
+2015-02-20 22:15:18,768 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: []
+2015-02-20 22:15:18,768 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier18]
+2015-02-20 22:15:18,799 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.LANGUAGES
+2015-02-20 22:15:18,799 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [language, lang_code]
+2015-02-20 22:15:18,799 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: []
+2015-02-20 22:15:18,799 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier_lang]
+2015-02-20 22:15:18,815 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.PRODUCT
+2015-02-20 22:15:18,831 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [created_by, modified_on, modified_by, created_on, description, product_code]
+2015-02-20 22:15:18,831 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: []
+2015-02-20 22:15:18,831 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier24]
+2015-02-20 22:15:18,862 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.RESOURCES
+2015-02-20 22:15:18,862 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [modified_on, resource_id, sequence_no, resource_desc, modified_by, created_on, locale, resource_type, created_ by, module_code, url]
+2015-02-20 22:15:18,862 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: []
+2015-02-20 22:15:18,862 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier9]
+2015-02-20 22:15:18,893 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.ROLES
+2015-02-20 22:15:18,893 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [created_by, modified_on, status, modified_by, role_code, product_code, created_on, role_desc]
+2015-02-20 22:15:18,893 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: [depends on]
+2015-02-20 22:15:18,893 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier8]
+2015-02-20 22:15:18,924 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.ROLES_GROUP_ROLES
+2015-02-20 22:15:18,924 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [role_code, product_code, group_role_code]
+2015-02-20 22:15:18,924 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: [is part of_group_roles, is part of_roles]
+2015-02-20 22:15:18,924 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: []
+2015-02-20 22:15:18,940 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.ROLES_HIERARCHY
+2015-02-20 22:15:18,940 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [node_code, role_code, product_code]
+2015-02-20 22:15:18,940 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: [superset_roles, superset_hierarchy]
+2015-02-20 22:15:18,956 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: []
+2015-02-20 22:15:18,971 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.ROLES_RESOURCES
+2015-02-20 22:15:18,971 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [resource_id, role_code, product_code]
+2015-02-20 22:15:18,971 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: [relationship10_roles]
+2015-02-20 22:15:18,971 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: []
+2015-02-20 22:15:19,002 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.SYS_PREFERENCES
+2015-02-20 22:15:19,002 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [display_allowed, value_datatype, preference_code, modified_allowed, default_value, description, value_options]
+2015-02-20 22:15:19,002 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: []
+2015-02-20 22:15:19,002 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [sys_preferences_pk]
+2015-02-20 22:15:19,081 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.USERS
+2015-02-20 22:15:19,081 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [mno_id, name_prefix, home_state, shipping_state, modify_approved_on, created_on, level1_approved_by, home_zip_code, allowed_ip, religion, first_name, home_city, modified_by, from_time, col10, age, primary_phone_nbr, parent_account_id, to_time, created_by, pref_language, modified_on, secondary_phone_nbr3, account_id, delete_approved_on, secondary_phone_nbr2, user_type, status, middle_name, delete_approved_by, shipping_city, secondary_phone_nbr4, address_1, email, last_name, col5, col4, col7, col6, col1, col3, col2, level2_approved_on, remarks, col9, col8, home_address, shipping_address, node_code, secondary_phone_nbr, user_id, modify_approved_by, address_1_zip_code, address_1_city, msisdn, level2_approved_by, address_1_state, batch_id, level1_approved_on, shipping_zip_code, allowed_days, dob, authentication_type, last_login_on]
+2015-02-20 22:15:19,081 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: []
+2015-02-20 22:15:19,081 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier1]
+2015-02-20 22:15:19,096 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.USERS_GROUP_ROLES
+2015-02-20 22:15:19,096 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [account_id, group_role_code]
+2015-02-20 22:15:19,096 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: [are assigned_users, are assigned_group_roles]
+2015-02-20 22:15:19,096 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: []
+2015-02-20 22:15:19,127 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.USERS_KYC_INFO
+2015-02-20 22:15:19,127 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [created_by, modified_on, kyc_doc_id, account_id, kyc_id, modified_by, created_on, kyc_doc_type, doc_type_desc]
+2015-02-20 22:15:19,127 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: [are validated with]
+2015-02-20 22:15:19,127 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier4]
+2015-02-20 22:15:19,159 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.USER_AUDIT_TRAIL
+2015-02-20 22:15:19,159 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [modified_on, ip_address, account_id, created_on, action_taken_time, audit_id, user_id, action_result, action_desc, user_action_code]
+2015-02-20 22:15:19,159 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: [action create]
+2015-02-20 22:15:19,159 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier14]
+2015-02-20 22:15:19,190 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.USER_LOGON_AUDIT
+2015-02-20 22:15:19,190 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [ip_address, osuser, account_id, logoff_time, logon_time, user_id, logon_audit_id]
+2015-02-20 22:15:19,190 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: [access creates]
+2015-02-20 22:15:19,190 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier15]
+2015-02-20 22:15:19,221 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.USER_PASSWORDS
+2015-02-20 22:15:19,221 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [creation_date, account_id, pin, expiration_date, authentication_type, pin_status, pin_retry_count, password_change_flag]
+2015-02-20 22:15:19,221 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: [is authenticated with]
+2015-02-20 22:15:19,221 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier13]
+2015-02-20 22:15:19,252 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000261: Table found: MESSMASTER.USER_THRESHOLDS
+2015-02-20 22:15:19,252 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000037: Columns: [threshold_id, account_id, threshold_category, threshold_ value]
+2015-02-20 22:15:19,252 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000108: Foreign keys: [maintain]
+2015-02-20 22:15:19,252 -  INFO - org.hibernate.tool.hbm2ddl.TableMetadata - <init> - HHH000126: Indexes: [unique_identifier5]
+2015-02-20 22:15:19,252 -  INFO - org.hibernate.tool.hbm2ddl.SchemaUpdate - execute - HHH000232: Schema update complete
+2015-02-20 22:15:19,643 -  INFO - org.springframework.web.servlet.handler.AbstractUrlHandlerMapping - registerHandler - Mapped URL path [/login] onto handler 'loginController'
+2015-02-20 22:15:19,643 -  INFO - org.springframework.web.servlet.handler.AbstractUrlHandlerMapping - registerHandler - Mapped URL path [/login/*] onto handler 'loginController'
+2015-02-20 22:15:19,737 -  INFO - org.springframework.web.context.ContextLoader - initWebApplicationContext - Root WebApplicationContext: initialization completed in 10649 ms
+2015-02-20 22:15:19,799 -  INFO - org.springframework.web.servlet.FrameworkServlet - initServletBean - FrameworkServlet 'mess': initialization started
+2015-02-20 22:15:19,807 -  INFO - org.springframework.context.support.AbstractApplicationContext - prepareRefresh - Refreshing WebApplicationContext for namespace 'mess-servlet': startup date [Fri Feb 20 22:15:19 IST 2015]; parent: Root WebApplicationContext
+2015-02-20 22:15:19,807 -  INFO - org.springframework.beans.factory.xml.XmlBeanDefinitionReader - loadBeanDefinitions - Loading XML bean definitions from ServletContext resource [/WEB-INF/mess-servlet.xml]
+2015-02-20 22:15:20,227 -  INFO - org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - <init> - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2015-02-20 22:15:20,305 -  INFO - org.springframework.web.servlet.handler.AbstractHandlerMethodMapping - registerHandlerMethod - Mapped "{[/login],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.mrptech.mess.controller.LoginController.doCustomerLogin(java.util.Map,javax.servlet.http.HttpServletRequest,java.util.Locale,com.mrptech.mess.dto.AuthenticationDto)
+2015-02-20 22:15:20,321 -  INFO - org.springframework.web.servlet.handler.AbstractHandlerMethodMapping - registerHandlerMethod - Mapped "{[/login],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.mrptech.mess.controller.LoginController.customerLogin(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+2015-02-20 22:15:20,321 -  INFO - org.springframework.web.servlet.handler.AbstractHandlerMethodMapping - registerHandlerMethod - Mapped "{[/login/test],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.mrptech.mess.controller.LoginController.viewAdmin(java.util.Map,java.lang.Long,java.util.Locale,javax.servlet.http.HttpServletRequest)
+2015-02-20 22:15:20,837 -  INFO - org.apache.tiles.access.TilesAccess - setContainer - Publishing TilesContext for context: org.springframework.web.servlet.view.tiles2.SpringWildcardServletTilesApplicationContext
+2015-02-20 22:15:20,930 -  INFO - org.springframework.web.servlet.FrameworkServlet - initServletBean - FrameworkServlet 'mess': initialization completed in 1124 ms
+2015-02-20 22:15:28,893 -  WARN - org.hibernate.hql.internal.ast.HqlSqlWalker - generatePositionalParameter - [DEPRECATION] Encountered positional parameter near line 1, column 354.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
