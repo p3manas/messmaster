@@ -57,18 +57,18 @@
 					</a>
 				</li>
 				
-			<c:forEach items="${SideMenu}" var="entry">
+			<c:forEach items="${SideMenu}" var="parent">
 			
 				<li>
 					<a class="" href="javascript:;">
 						<i class="fa fa-retweet"></i>
-						<span class="title">${entry.key}</span>
+						<span class="title">${parent.key}</span>
 						<span class="arrow"></span>
 					</a>
 					<ul class="sub-menu">
-					<c:forEach items="${entry.value}" var="double">
+					<c:forEach items="${parent.value}" var="child">
 						
-							<li id="loanreq"><a href="${double.password}">${double.userName}</a></li>
+							<li id="loanreq"><a href="<%=request.getContextPath()%>/${child.url}">${child.userName}</a></li>
 							
 					</c:forEach>
 					</ul>		
@@ -79,15 +79,3 @@
 		</ul>
 	</div>
 </div>
-<script type="text/javascript">
-
-	function profile() {
-		var category = $("#userCategory").val();
-		window.location.href = '<%=request.getContextPath()%>/<%=Tiles.RD_URL_PATH_PREFIX%>/settings/viewprofile?category=' + category;
-	}
-	$(function(){
-		 $.slidebars();
-		 App.init();
-		});
-	
-</script>

@@ -11,7 +11,7 @@ import javax.servlet.ServletContextListener;
 
 import org.springframework.orm.hibernate4.HibernateTemplate;
 
-import com.mrptech.mess.dto.AuthenticationDto;
+import com.mrptech.mess.dto.LoginDto;
 
 public class MessMasterListner implements ServletContextListener{
 
@@ -33,19 +33,19 @@ public class MessMasterListner implements ServletContextListener{
 						Restrictions.eq("userId", "sysAdmin@manas.com")));
 		System.out.println("Manas  " + users11);*/
 
-		 Map<String, List<AuthenticationDto>> map=new HashMap<String, List<AuthenticationDto>>();
+		 Map<String, List<LoginDto>> map=new HashMap<String, List<LoginDto>>();
 
-		AuthenticationDto dto=new AuthenticationDto();
+		LoginDto dto=new LoginDto();
 		dto.setUserName("View Shopping History");
-		dto.setPassword("test");
-		AuthenticationDto dto1=new AuthenticationDto();
+		dto.setUrl("test");
+		LoginDto dto1=new LoginDto();
 		dto1.setUserName("View Shopping Report");
-		dto1.setPassword("test");
-		AuthenticationDto dto2=new AuthenticationDto();
+		dto1.setUrl("test");
+		LoginDto dto2=new LoginDto();
 		dto2.setUserName("View Complaint");
-		dto2.setPassword("test");
+		dto2.setUrl("test");
 		
-		List<AuthenticationDto> list=new ArrayList<AuthenticationDto>();
+		List<LoginDto> list=new ArrayList<LoginDto>();
 		list.add(dto);
 		list.add(dto1);
 		list.add(dto2);
@@ -55,17 +55,17 @@ public class MessMasterListner implements ServletContextListener{
 		
 		
 		
-		AuthenticationDto user=new AuthenticationDto();
+		LoginDto user=new LoginDto();
 		user.setUserName("Add user");
-		user.setPassword("login/test");
-		AuthenticationDto user1=new AuthenticationDto();
+		user.setUrl("login/test");
+		LoginDto user1=new LoginDto();
 		user1.setUserName("Update user");
-		user1.setPassword("#");
-		AuthenticationDto user2=new AuthenticationDto();
+		user1.setUrl("#");
+		LoginDto user2=new LoginDto();
 		user2.setUserName("delete user");
-		user2.setPassword("#");
+		user2.setUrl("#");
 		
-		List<AuthenticationDto> users=new ArrayList<AuthenticationDto>();
+		List<LoginDto> users=new ArrayList<LoginDto>();
 		users.add(user);
 		users.add(user1);
 		users.add(user2);
@@ -75,17 +75,17 @@ public class MessMasterListner implements ServletContextListener{
 		
 		
 		
-		AuthenticationDto access=new AuthenticationDto();
+		LoginDto access=new LoginDto();
 		access.setUserName("change password");
-		access.setPassword("login/test");
-		AuthenticationDto access1=new AuthenticationDto();
+		access.setUrl("login/test");
+		LoginDto access1=new LoginDto();
 		access1.setUserName("Reset password");
-		access1.setPassword("login/test");
-		AuthenticationDto access2=new AuthenticationDto();
+		access1.setUrl("login/test");
+		LoginDto access2=new LoginDto();
 		access2.setUserName("delete password");
-		access2.setPassword("#");
+		access2.setUrl("#");
 		
-		List<AuthenticationDto> accesss=new ArrayList<AuthenticationDto>();
+		List<LoginDto> accesss=new ArrayList<LoginDto>();
 		accesss.add(access);
 		accesss.add(access1);
 		accesss.add(access2);

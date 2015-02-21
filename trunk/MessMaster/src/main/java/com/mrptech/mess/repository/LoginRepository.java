@@ -6,7 +6,6 @@ package com.mrptech.mess.repository;
 import java.util.List;
 import java.util.Map;
 
-import com.mrptech.mess.dto.AuthenticationDto;
 import com.mrptech.mess.dto.LoginDto;
 
 
@@ -48,7 +47,7 @@ public interface LoginRepository {
 	 * @param categoryId
 	 * @return
 	 */
-	Map<String, List<AuthenticationDto>> login(String loginId, String password, Integer categoryId);
+	Map<String, List<LoginDto>> login(String loginId, String password, Integer categoryId);
 	
 	
 }

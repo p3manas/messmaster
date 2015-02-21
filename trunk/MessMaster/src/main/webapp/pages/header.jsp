@@ -51,13 +51,13 @@
 					</ul>
 				</li>
 				
-				<form class="navbar-form navbar-left" role="search">
+					<form class="navbar-form navbar-left" role="search">
 					<div class="form-group">
 					  <input type="text" class="form-control" placeholder="Search">
 					</div>
 					<button type="submit" class="btn btn-default">Submit</button>
 				 </form>
-				 <li title="Logout"><a href="<%=request.getContextPath()%>/<%=Tiles.RD_URL_PATH_PREFIX%>/customer/logout"><i class="fa fa-power-off"></i></a></li>
+				 <li title="Logout"><a href="<%=request.getContextPath()%>/<%=Tiles.RD_URL_PATH_PREFIX%>/login/logout"><i class="fa fa-power-off"></i></a></li>
 			</ul>
 		</div>
 	</div>

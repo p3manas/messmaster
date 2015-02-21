@@ -11,7 +11,7 @@ import javax.inject.Inject;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.mrptech.mess.dto.AuthenticationDto;
+import com.mrptech.mess.dto.LoginDto;
 import com.mrptech.mess.repository.LoginRepository;
 import com.mrptech.mess.service.LoginService;
 
@@ -31,7 +31,7 @@ public class LoginServiceImpl implements LoginService {
 	}
 
 	@Override
-	public Map<String, List<AuthenticationDto>> login(String loginId, String password,
+	public Map<String, List<LoginDto>> login(String loginId, String password,
 			Integer categoryId) {
 		return loginRepository.login(loginId, password, categoryId);
 	}
