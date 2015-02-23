@@ -20,7 +20,7 @@
 		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-2.0.xsd
 		http://www.springframework.org/schema/oxm http://www.springframework.org/schema/oxm/spring-oxm-4.0.xsd">
 
-	<!-- <context:property-placeholder location="file:D:/mfs/projects/props/web-db.properties" /> -->
+	<!-- <context:property-placeholder location="file:D:/mess/projects/props/web-db.properties" /> -->
 	
 	<!-- Activates various annotations to be detected in bean classes -->
 	<context:annotation-config />
@@ -80,8 +80,7 @@
 		p:username="MESSMASTER" p:password="MESSMASTER" />
 
 	<!-- Hibernate session -->
-	<bean id="sessionFactory"
-		class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+	<bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
 		<property name="dataSource" ref="dataSource" />
 		<property name="annotatedClasses">
 			<list>
@@ -103,8 +102,6 @@
 				<value>com.mrptech.mess.model.UsersGroupRoles</value>
 				<value>com.mrptech.mess.model.UsersKycInfo</value>
 				<value>com.mrptech.mess.model.UserThresholds</value>
-				
-				
 			</list>
 		</property>
 		<property name="hibernateProperties">
