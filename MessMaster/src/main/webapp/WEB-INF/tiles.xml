@@ -23,6 +23,9 @@
 		<put-attribute name="navigator" value="/pages/login/navigator.jsp" />
 		<put-attribute name="body" value="/pages/login/login.jsp" />
 	</definition>
+	<definition name="user.logout" extends="customer.login">
+			<!-- <put-attribute name="body" value="/pages/login/underconstruction.jsp" /> -->
+	</definition>
 	
 	<definition name="customer.dashboard" extends="mf.def">
 		<put-attribute name="body" value="/pages/login/dashboard.jsp" />
@@ -30,5 +33,9 @@
 	<definition name="test.dashboard" extends="mf.def">
 			<put-attribute name="body" value="/pages/login/underconstruction.jsp" />
 	</definition>
+	
+	
+	
+	
 	
 </tiles-definitions> 

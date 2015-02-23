@@ -26,9 +26,9 @@ xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns
 	<listener>
 	    <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
-	<listener>
+	<!-- <listener>
 	    <listener-class>com.mrptech.mess.listner.MessMasterListner</listener-class>
-	</listener>
+	</listener> -->
 	
 	<welcome-file-list>
         <welcome-file>index.html</welcome-file>
