@@ -29,12 +29,9 @@
 			</list>
 		</property>
 	</bean>
-	
-	<!-- <mvc:interceptors>
-			<bean class="com.panamax.mf.portal.interceptors.ErrorMsgInterceptor" />
-  			<bean class="com.panamax.mf.portal.interceptors.UserAuthenticationInterceptor" />
-  			<bean class="com.panamax.mf.portal.interceptors.AuditLogInterceptor" />
-	</mvc:interceptors>  -->
+	<mvc:interceptors>
+			<bean class="com.mrptech.mess.listner.MessMasterListner" />
+	</mvc:interceptors> 
 	
 	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
 		<!-- one of the properties available; the maximum file size in bytes -->

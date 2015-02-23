@@ -31,6 +31,7 @@
 		console.log(id+"--->")
 		 $('li').removeClass('active');
 		 var id_ =id.split("|")
+		 console.log(id_+"   mmmmm --->")
 		 $("#"+id_[0]).addClass('active');
 		 if(id_.length>0){
 			 $("#"+id_[1]).addClass('active open');
@@ -79,3 +80,12 @@
 		</ul>
 	</div>
 </div>
+<script type="text/javascript">
+
+	
+	$(function(){
+		 $.slidebars();
+		 App.init();
+		});
+	
+</script>

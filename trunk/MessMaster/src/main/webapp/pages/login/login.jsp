@@ -113,9 +113,15 @@ $(function(){
 									<input type="button" class="btn btn-default btn-green" onclick="loginSubmit();" value='<spring:message code="sign.in.lbl" />'/>
 									</div>
 							  </div>
-							 
+							 <div class="col-xs-8">
+							  	<a href="#"><spring:message code="resend.activation.lbl" /></a>
+						     </div>
 						</form:form><!-- end form-->
 					  </div>
+					   <div class="panel-footer pf">
+                      		<a href="#" class="pull-left clr"><spring:message code="forgot.password.lbl" /></a>
+    	              		<a  href="#" class="pull-right clr"><spring:message code="new.user.signup.lbl" /></a>
+                      </div>
                       
 			    </div>
 			    </div>
