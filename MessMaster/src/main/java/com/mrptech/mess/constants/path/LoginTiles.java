@@ -10,7 +10,7 @@ import com.mrptech.mess.constants.Tiles;
  * @author manas rp 
  *
  */
-public interface CustomerLogin extends Tiles {
+public interface LoginTiles extends Tiles {
 
 	
 	

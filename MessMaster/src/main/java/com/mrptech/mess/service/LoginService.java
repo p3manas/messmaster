@@ -43,7 +43,7 @@ public interface LoginService {
 	 *  	no need to do any action
 	 */
 	
-	Map<String, List<LoginDto>> login(String loginId, String password, Integer categoryId);
+	Map<String, List<LoginDto>> login(String loginId, String password);
 	
 	
 	
