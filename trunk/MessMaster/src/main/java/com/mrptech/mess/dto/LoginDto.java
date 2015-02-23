@@ -26,6 +26,7 @@ public class LoginDto implements Serializable {
 	
 	private Long authId;
 	
+	private String password;
 	
 	private Integer status;
 	
@@ -138,6 +139,20 @@ public class LoginDto implements Serializable {
 	 */
 	public void setUrl(String url) {
 		this.url = url;
+	}
+
+	/**
+	 * @return the password
+	 */
+	public String getPassword() {
+		return password;
+	}
+
+	/**
+	 * @param password the password to set
+	 */
+	public void setPassword(String password) {
+		this.password = password;
 	}
 	
 }

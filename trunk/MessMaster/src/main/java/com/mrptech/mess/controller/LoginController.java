@@ -3,9 +3,7 @@
  */
 package com.mrptech.mess.controller;
 
-import java.util.List;
 import java.util.Locale;
-import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
@@ -19,19 +17,20 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.mrptech.mess.constants.path.CustomerLogin;
+import com.mrptech.mess.constants.path.LoginTiles;
 import com.mrptech.mess.dto.LoginDto;
 import com.mrptech.mess.service.LoginService;
 
 
 
 /**
+ * This class will operate login functionality.
  * @author manas rp
  *
  */
 @Controller
 @RequestMapping("/login")
-public class LoginController  implements CustomerLogin{
+public class LoginController  implements LoginTiles{
 
 	private static final Logger LOGGER = Logger.getLogger(LoginController.class.getName());
 
@@ -49,30 +48,36 @@ public class LoginController  implements CustomerLogin{
 		return CUSTOMER_LOGIN;
 	}
 	
-	@SuppressWarnings("unchecked")
 	@RequestMapping(method = RequestMethod.POST)
-	public String doCustomerLogin(@SuppressWarnings("rawtypes") Map model, HttpServletRequest request, Locale locale, @ModelAttribute LoginDto authenticationDto){
+	public String doCustomerLogin(HttpServletRequest request, Locale locale, @ModelAttribute LoginDto loginDto){
+		LOGGER.info("Enter into method doCustomerLogin.");
 		
+		HttpSession session=request.getSession();		
+		//loginService.login(loginDto.getUserName(), loginDto.getPassword());
 		
-		
-		//context.
-		
-		Map<String, List<LoginDto>>  map=loginService.login("sysAdmin@manas.com", "", 12);
-		
-		HttpSession session=request.getSession();
-		session.setAttribute("SideMenu", map);
-		model.put("SideMenu", map);
+		session.setAttribute("IS_LOGIN_SUC", true);
+		session.setAttribute("USER_TYPE", "SYSTEM_ADMIN");
 		
 		return CUSTOMER_DASHBOARD_VIEW;
 	}
-	
-	@SuppressWarnings("unchecked")
-	@RequestMapping(value="/test", method = RequestMethod.GET)
-	public String viewAdmin(Map model, Long id, Locale locale, HttpServletRequest request) {
+	@RequestMapping(value="/logout",method = RequestMethod.GET)
+	public String logout(HttpServletRequest request, Model model) {
+		LoginDto dto = new LoginDto();
+		model.addAttribute(AUTHENTICATION_FORM, dto);
 		
 		HttpSession session=request.getSession();
-		session.getAttribute("SideMenu");
-		model.put("SideMenu", session.getAttribute("SideMenu"));
+		session.removeAttribute("IS_LOGIN_SUC");
+		session.removeAttribute("USER_TYPE");
+		
+		return "user.logout";
+	}
+	
+	@RequestMapping(value="/test", method = RequestMethod.GET)
+	public String viewAdmin(Long id, Locale locale, HttpServletRequest request) {
+		
+		//HttpSession session=request.getSession();
+		//session.getAttribute("SideMenu");
+		//model.put("SideMenu", session.getAttribute("SideMenu"));
 		return "test.dashboard";
 		
 	}
