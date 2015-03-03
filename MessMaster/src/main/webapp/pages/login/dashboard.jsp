@@ -6,9 +6,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title><spring:message code="customer.dashboard.lbl"/></title>
-<script type='text/javascript' src='<%=request.getContextPath()%>/js/eu/bootstrap.min.js'></script>
- <link href="<%=request.getContextPath()%>/css/bootstrap.min.css" rel="stylesheet">
- <script type='text/javascript' src='<%=request.getContextPath()%>/js/eu/jquery-1.11.2.min.js'></script>
+
 </head>	           
                   <div>
                   <ul class="breadcrumb">
@@ -22,6 +20,13 @@
                   </div>
  <div class ="jumbotron">
 		<div class="container">
+		
+		
+		
+		
+		
+		
+		
 		
  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->

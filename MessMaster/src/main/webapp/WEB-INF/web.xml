@@ -38,6 +38,23 @@ xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns
 	<session-config>
 		<session-timeout>60</session-timeout>
 	</session-config> 
+	
+	 <!-- <filter>
+    <filter-name>hibernateFilter</filter-name>
+    <filter-class>org.springframework.orm.hibernate4.support.OpenSessionInViewFilter</filter-class>
+    <init-param>
+      <param-name>singleSession</param-name>
+      <param-value>false</param-value>
+    </init-param>
+  </filter> -->
+	<!-- <filter>
+    <filter-name>openSessionInViewFilter</filter-name>
+    <filter-class>org.springframework.orm.hibernate4.support.OpenSessionInViewFilter</filter-class>
+    <init-param>
+        <param-name>flushMode</param-name>
+        <param-value>COMMIT/AUTO</param-value>
+    </init-param>
+</filter> -->
 		<!-- <servlet>
 	        <servlet-name>StickyCaptcha</servlet-name>
 	        <servlet-class>nl.captcha.servlet.SimpleCaptchaServlet</servlet-class>

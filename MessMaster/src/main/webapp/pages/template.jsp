@@ -34,7 +34,7 @@
 	    <!-- Custom styles for this template -->
 	    
 	    <link href="${contextPath}/css/bootstrap-responsive.min.css" rel="stylesheet">
-    		<script type='text/javascript' src='<%=request.getContextPath()%>/js/eu/bootstrap.min.js'></script>
+	    
     
 		<script type='text/javascript' src='<%=request.getContextPath()%>/js/eu/jquery-1.11.2.min.js'></script>
 		<script type='text/javascript' src='<%=request.getContextPath()%>/js/eu/jquery.easyui.min.js'></script>
@@ -44,6 +44,7 @@
 		<script type='text/javascript' src='<%=request.getContextPath()%>/js/slidebars.min.js'></script>
 		<script type='text/javascript' src='<%=request.getContextPath()%>/js/scripts.js'></script>
 		<script type="text/javascript" src="http://www.jeasyui.com/easyui/datagrid-detailview.js"></script>
+		<script type='text/javascript' src='<%=request.getContextPath()%>/js/eu/bootstrap.min.js'></script>
 		
 		<title><tiles:insertAttribute name="title" /></title>
 		<jsp:include page="/pages/common.jsp" ></jsp:include>
