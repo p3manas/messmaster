@@ -28,12 +28,19 @@
 	</definition>
 	
 	<definition name="customer.dashboard" extends="mf.def">
+		<put-attribute name="title" value="User Management"/>
 		<put-attribute name="body" value="/pages/login/dashboard.jsp" />
 	</definition>
 	<definition name="test.dashboard" extends="mf.def">
 			<put-attribute name="body" value="/pages/login/underconstruction.jsp" />
 	</definition>
 	
+	<definition name="user.display" extends="mf.def">
+			<put-attribute name="body" value="/pages/user/displayUsers.jsp" />
+	</definition>
+	<definition name="user.add" extends="mf.def">
+			<put-attribute name="body" value="/pages/user/addUser.jsp" />
+	</definition>
 	
 	
 	
