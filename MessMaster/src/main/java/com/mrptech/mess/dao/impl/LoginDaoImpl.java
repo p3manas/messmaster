@@ -3,10 +3,7 @@
  */
 package com.mrptech.mess.dao.impl;
 
-import java.util.ArrayList;
-import java.util.LinkedHashMap;
 import java.util.List;
-import java.util.Map;
 
 import javax.inject.Inject;
 
@@ -16,7 +13,6 @@ import org.springframework.orm.hibernate4.HibernateTemplate;
 import org.springframework.stereotype.Component;
 
 import com.mrptech.mess.dao.LoginDao;
-import com.mrptech.mess.dto.LoginDto;
 import com.mrptech.mess.model.Users;
 
 /**
@@ -39,8 +35,11 @@ public class LoginDaoImpl implements LoginDao {
 	public Users validateLgin(String loginId, String password) {
 		List<Users> users = (List<Users>) hibernateTemplate
 				.findByCriteria(DetachedCriteria.forClass(Users.class).add(Restrictions.eq("userId", loginId))
-						.add(Restrictions.eq("userId", loginId)));
-		return null;
+						.add(Restrictions.eq("userId", loginId))
+						.add(Restrictions.eq("status", "ACTIVE"))
+						//.add(Restrictions.eq("userPasswords.pin", password))
+						);
+		return (users.size()>0)?users.get(0):null;
 	}
 
 }

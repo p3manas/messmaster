@@ -20,126 +20,70 @@ public class LoginDto implements Serializable {
 
 	private String userName;
 	
-	private Integer category;
+	private String nodeCode;
 	
 	private Date lastLoginTime;
-	
-	private Long authId;
-	
+		
 	private String password;
 	
-	private Integer status;
-	
-	
-	private Long loginRegionId;
-	
-	private String loginRegionName;
-	
-	private Long loginSubRegionId;
-	
-	private String loginSubRegionName;
-	
-	private String fullName;
+	private String status;
 	
 	private String url;
+	
+	private String userType;
+	
+	
 	public LoginDto(){
 	}
 
+
+	/**
+	 * @return the userName
+	 */
 	public String getUserName() {
 		return userName;
 	}
 
+
+	/**
+	 * @param userName the userName to set
+	 */
 	public void setUserName(String userName) {
 		this.userName = userName;
 	}
 
-	public Integer getCategory() {
-		return category;
+
+	/**
+	 * @return the nodeCode
+	 */
+	public String getNodeCode() {
+		return nodeCode;
 	}
 
-	public void setCategory(Integer category) {
-		this.category = category;
+
+	/**
+	 * @param nodeCode the nodeCode to set
+	 */
+	public void setNodeCode(String nodeCode) {
+		this.nodeCode = nodeCode;
 	}
 
+
+	/**
+	 * @return the lastLoginTime
+	 */
 	public Date getLastLoginTime() {
 		return lastLoginTime;
 	}
 
+
+	/**
+	 * @param lastLoginTime the lastLoginTime to set
+	 */
 	public void setLastLoginTime(Date lastLoginTime) {
 		this.lastLoginTime = lastLoginTime;
 	}
 
-	public Long getAuthId() {
-		return authId;
-	}
-
-	public void setAuthId(Long authId) {
-		this.authId = authId;
-	}
-
-
-
-	public Integer getStatus() {
-		return status;
-	}
-
-	public void setStatus(Integer status) {
-		this.status = status;
-	}
-
-	public Long getLoginRegionId() {
-		return loginRegionId;
-	}
-
-	public void setLoginRegionId(Long loginRegionId) {
-		this.loginRegionId = loginRegionId;
-	}
-
-	public String getLoginRegionName() {
-		return loginRegionName;
-	}
-
-	public void setLoginRegionName(String loginRegionName) {
-		this.loginRegionName = loginRegionName;
-	}
-
-	public Long getLoginSubRegionId() {
-		return loginSubRegionId;
-	}
-
-	public void setLoginSubRegionId(Long loginSubRegionId) {
-		this.loginSubRegionId = loginSubRegionId;
-	}
-
-	public String getLoginSubRegionName() {
-		return loginSubRegionName;
-	}
-
-	public void setLoginSubRegionName(String loginSubRegionName) {
-		this.loginSubRegionName = loginSubRegionName;
-	}
-
-	public String getFullName() {
-		return fullName;
-	}
-
-	public void setFullName(String fullName) {
-		this.fullName = fullName;
-	}
-
-	/**
-	 * @return the url
-	 */
-	public String getUrl() {
-		return url;
-	}
-
-	/**
-	 * @param url the url to set
-	 */
-	public void setUrl(String url) {
-		this.url = url;
-	}
 
 	/**
 	 * @return the password
@@ -148,11 +92,61 @@ public class LoginDto implements Serializable {
 		return password;
 	}
 
+
 	/**
 	 * @param password the password to set
 	 */
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	
+
+
+	/**
+	 * @return the status
+	 */
+	public String getStatus() {
+		return status;
+	}
+
+
+	/**
+	 * @param status the status to set
+	 */
+	public void setStatus(String status) {
+		this.status = status;
+	}
+
+
+	/**
+	 * @return the url
+	 */
+	public String getUrl() {
+		return url;
+	}
+
+
+	/**
+	 * @param url the url to set
+	 */
+	public void setUrl(String url) {
+		this.url = url;
+	}
+
+
+	/**
+	 * @return the userType
+	 */
+	public String getUserType() {
+		return userType;
+	}
+
+
+	/**
+	 * @param userType the userType to set
+	 */
+	public void setUserType(String userType) {
+		this.userType = userType;
+	}
+
+		
 }
