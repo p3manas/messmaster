@@ -25,10 +25,23 @@
 	<!-- Activates various annotations to be detected in bean classes -->
 	<context:annotation-config />
 	
+	<!-- <util:properties id="dbProperty" location="classpath:hibernate.properties"></util:properties>
+	<context:property-placeholder properties-ref="dbProperty"/> -->
+	
+	<bean
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+ 
+		<property name="location">
+			<value>classpath:hibernate.properties</value>
+		</property>
+	</bean>
 	<!-- Configures the annotation-driven Spring MVC Controller programming model. -->
 	<mvc:annotation-driven />
 	
 	<context:component-scan base-package="com.mrptech.mess.*" />
+	<!-- <context:component-scan base-package="com.mrptech.mess.dao.impl" />
+    <context:component-scan base-package="com.mrptech.mess.repo.impl" />
+    <context:component-scan base-package="com.mrptech.mess.service.impl" /> -->
 
 	<!-- Json beans -->
 	<bean id="restTemplate" class="org.springframework.web.client.RestTemplate">
@@ -76,8 +89,8 @@
 	<!-- db Data source -->
 	<bean id="dataSource"
 		class="org.springframework.jdbc.datasource.DriverManagerDataSource"
-		p:driverClassName="oracle.jdbc.OracleDriver" p:url="jdbc:oracle:thin:@localhost:1521:orcl"
-		p:username="MESSMASTER" p:password="MESSMASTER" />
+		p:driverClassName="${dataSource.driverClassName}" p:url="${dataSource.url}"
+		p:username="${dataSource.username}" p:password="${dataSource.password}" />
 
 	<!-- Hibernate session -->
 	<bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
@@ -106,9 +119,9 @@
 		</property>
 		<property name="hibernateProperties">
 			<props>
-				<prop key="hibernate.dialect" >org.hibernate.dialect.Oracle10gDialect</prop>
+				<prop key="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</prop>
 				<prop key="hibernate.hbm2ddl.auto">update</prop><!-- create to reinitialise -->
-				<prop key="hibernate.show_sql">false</prop>
+				<prop key="hibernate.show_sql">true</prop>
 			</props>
 		</property>
 	</bean>
@@ -126,4 +139,5 @@
 	
 	<tx:annotation-driven transaction-manager="transactionManager"/>
 	
+
 </beans>
