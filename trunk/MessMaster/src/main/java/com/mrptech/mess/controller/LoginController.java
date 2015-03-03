@@ -42,23 +42,36 @@ public class LoginController  implements LoginTiles{
 	ApplicationContext context;
 	
 	@RequestMapping(method = RequestMethod.GET)
-	public String customerLogin(HttpServletRequest request, Model model) {
+	public String login( Model model) {
 		LoginDto dto = new LoginDto();
 		model.addAttribute(AUTHENTICATION_FORM, dto);
 		return CUSTOMER_LOGIN;
 	}
 	
 	@RequestMapping(method = RequestMethod.POST)
-	public String doCustomerLogin(HttpServletRequest request, Locale locale, @ModelAttribute LoginDto loginDto){
+	public String doLogin(HttpServletRequest request,Model model, Locale locale, @ModelAttribute LoginDto loginDto){
 		LOGGER.info("Enter into method doCustomerLogin.");
 		
 		HttpSession session=request.getSession();		
-		//loginService.login(loginDto.getUserName(), loginDto.getPassword());
+		LoginDto users=loginService.login(loginDto.getUserName(), loginDto.getPassword());
 		
-		session.setAttribute("IS_LOGIN_SUC", true);
-		session.setAttribute("USER_TYPE", "SYSTEM_ADMIN");
+		if (users !=null) {
+			session.setAttribute("IS_LOGIN_SUC", true);
+			session.setAttribute("USER_TYPE", users.getUserType());
+			
+			return CUSTOMER_DASHBOARD_VIEW;
+		}else{
+			model.addAttribute(AUTHENTICATION_FORM, loginDto);
+			return CUSTOMER_LOGIN;
+		}
 		
-		return CUSTOMER_DASHBOARD_VIEW;
+		
+		
+		
+		
+		
+		
+		
 	}
 	@RequestMapping(value="/logout",method = RequestMethod.GET)
 	public String logout(HttpServletRequest request, Model model) {
@@ -73,7 +86,7 @@ public class LoginController  implements LoginTiles{
 	}
 	
 	@RequestMapping(value="/test", method = RequestMethod.GET)
-	public String viewAdmin(Long id, Locale locale, HttpServletRequest request) {
+	public String viewAdmin() {
 		
 		//HttpSession session=request.getSession();
 		//session.getAttribute("SideMenu");

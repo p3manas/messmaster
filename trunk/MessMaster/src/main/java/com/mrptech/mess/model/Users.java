@@ -11,6 +11,7 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.Id;
+import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
@@ -22,6 +23,7 @@ import javax.persistence.TemporalType;
  */
 @Entity
 @Table(name = "USERS")
+@NamedQuery(name="Users.findAll",query="SELECT U FROM Users U")
 public class Users implements java.io.Serializable {
 
 	/**

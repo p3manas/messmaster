@@ -3,7 +3,9 @@
  */
 package com.mrptech.mess.service;
 
-import com.mrptech.mess.dto.LoginDto;
+import java.util.List;
+
+import com.mrptech.mess.dto.UserDto;
 
 
 
@@ -11,7 +13,7 @@ import com.mrptech.mess.dto.LoginDto;
  * @author Manas RP
  *
  */
-public interface LoginService {
+public interface UserService {
 
 	/**
 	 *  1. get the authentication record based on categoryId and loginId
@@ -40,8 +42,8 @@ public interface LoginService {
 	 *  	no need to do any action
 	 */
 	
-	LoginDto login(String loginId, String password);
+	public List<UserDto> viewAll();
 	
-	
+	public void saveUser(UserDto dto);
 	
 }

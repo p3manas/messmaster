@@ -37,14 +37,13 @@ public class MessMasterListner implements HandlerInterceptor{
 
 		String userType=null;
 		boolean isLoginSuc=false;
-		if(!arg3.getViewName().equals("customer.login")){
+		if(!arg3.getViewName().equals("customer.login") && !arg3.getViewName().equals("user.logout")){
 			 isLoginSuc=(boolean)arg0.getSession().getAttribute("IS_LOGIN_SUC");
 			 userType=(String)arg0.getSession().getAttribute("USER_TYPE");
 			
 		}
 		
 		
-
 		HandlerMethod handlerMethod=(HandlerMethod)arg2;
 		String name=handlerMethod.getMethod().getName();
 		if(isLoginSuc && name != "customerLogin"&& arg0.getSession().getAttribute("SideMenu") ==null){
